@@ -46,7 +46,17 @@ body {
 /* ufo */
 .ufo-conter{
   position: relative;
+  animation: ufoformation 3s infinite ease 1s both;
+  -webkit-animation: ufoformation 3s infinite ease 1s both;
 }
+@keyframes ufoformation {
+  from {
+  transform: translate(10,0);
+  }
+  to {
+  transform: translate(50vh,50vh);
+  }
+  }
 .ufo-conter .ufo-body{
   width: 112px;
 	height: 60px;
@@ -153,61 +163,30 @@ body {
   height:650px;
   display:block;
   margin: auto;
-
 }
-#cow{
-
-}
-.cow-conter .cow-face{
-  width: 70px;
-	height: 50px;
-	border-radius: 90% 20% 30% 40% /60%;
-  position: absolute;
-  background: red;
-  top: 500px;
-}
-.cow-conter .ear{
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 20px solid red;
-  position: absolute;
-  top: 490px;
-  left: 33px;
-}
-.cow-conter .cow-neck{
-  width: 40px;
-	height: 20px;
-  background-color: red;
-  position: absolute;
-  top: 510px;
-  left: 50px;
-}
-.cow-conter .cow-body{
+.shadow{
   width: 120px;
-	height: 80px;
-  border-radius: 20px 20px 30px 40px / 30px 30px 30px 40px;
-  background-color: red;
+	height: 30px;
+  border-radius: 50%;
+  background-color: rgb(7, 54, 1);
+  position: absolute;
+  top: 590px;
+  left: 80px;
+}
+.human-conter .human-face{
+  width: 40px;
+	height: 40px;
+	border-radius: 50%;;
+  position: absolute;
+  background: black;
+  top: 500px;
+  left: 90px;
+}
+.human-conter .human-body{
+  width: 10px;
+	height: 70px;
+  background-color: black;
   position: absolute;
   top: 500px;
   left: 80px;
-}
-.cow-conter .cow-leg1{
-  width: 30px;
-	height: 50px;
-  border-radius: 10px 40px 20px 20px;
-  background-color: red;
-  position: absolute;
-  top: 560px;
-  left: 90px;
-}
-.cow-conter .cow-leg2{
-  width: 30px;
-	height: 50px;
-  border-radius: 40px 10px 20px 20px;
-  background-color: red;
-  position: absolute;
-  top: 560px;
-  left: 160px;
 }
