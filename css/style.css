@@ -2,12 +2,14 @@
 body {
     font-family: 'Kiwi Maru', serif;
     font-weight: 300;
-    /* font-size: 16px; */
+    font-size: 16px;
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.5);
     background: whitesmoke;
   }
-
+h1{
+  font-weight: bold;
+}
 @media screen and (max-width: 992px) {
     body {
       font-size: 20px;
@@ -27,7 +29,7 @@ body {
 
   position: relative;
   width: 100%;
-  min-height: 85vh;
+  max-height: 90vh;
 
 }
 
@@ -179,19 +181,39 @@ body {
 }
 
 
-.profile-image{
-  max-height: 700px;
-  width: 65%;
+.image{
+  max-width: 60%;
   height: auto;
+
 }
   
 .p-contents{
 background: linear-gradient(#da7dff, #4d4398) fixed;
-height: 1000px;
+height: 2600px;
 margin-top: 0px;
 }
 
 
 .nav{
   padding-left: 0;
+}
+.nav-tabs .nav-link{
+  
+}
+.tab-content{
+  padding: 1em 1.5em;
+    background-color: white;
+    border-left: solid 10px #f8e58c;
+    color:#000000;/*文字色*/
+}
+.nav-tabs .nav-link{
+  
+  color: black;
+  line-height: 30px;
+  /* */
+  
+}
+.card-header{
+  /* background-color: white; */
+  /* color: white; */
 }

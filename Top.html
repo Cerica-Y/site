@@ -93,15 +93,15 @@
       </button>
         
       <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarToggleExternalContent">
-        <ul class="navbar-nav ms-auto flex-nowrap">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#top">TOP</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#p-contents">PROFILE</a>
+              <a class="nav-link active" aria-current="page" href="#profile">PROFILE</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Top.html">SKILL</a>
+              <a class="nav-link active" aria-current="page" href="#skill">SKILL</a>
           </li>
           <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="Top.html">WORKS</a>
@@ -115,42 +115,173 @@
   </nav>
 
 <!-- プロフィール -->
-  <div class="p-contents cover-container d-flex w-1000 h-1000 p-10 mx-auto flex-column" id="p-contents">
-    <section class="profile asection_padding pt-5">
+  <div class="p-contents cover-container d-flex w-1000 h-1000 p-10 mx-auto flex-column">
+
+    <div id="profile">
+      <section class="profile asection_padding pt-5">
+        <div class="text-center d-flex my-5 mt-30 justify-content-center ">
+          <img class="image position-absolute " src="image/巻物.png" alt="makimono">
+        </div>
+        <div class="container col-md-6 p-lg-5 mx-auto my-5">
+        <div class="mx-auto my-5 position-relative">
+          <div class="row d-flex align-items-center justify-content-between mt-4">
+            <div class="text-center mb-3">
+              <h1>プロフィール</h1>
+            </div>
+          </div>
+            <hr>
+            <div class="row d-flex align-items-center justify-content-between">
+              <div class="col-md-5 p-2">
+                <div class="prof-text text-center p-30">
+                  <h3>やんだやんだ</h3>
+                  <img alt="こんな顔">
+                </div>
+              </div>
+              <div class="col-md-7 p-2">
+                <div class="about_text">
+                  <p>Working in conjunction with humanitarian aid 
+                  agencies, we have supported programmes to help
+                  alleviate human suffering through animal welfare
+                  when people might depend on livestock as their only
+                  source of income or food.</p>
+                </div>
+              </div>
+              <div class="p-2">
+                <p>四角:珍事学検定3球、ちょこざいな検定3球、PK(パンケーキ)検定3球</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  <!-- スキル -->
+  <div id="skill">
+    <section class="skill asection_padding pt-5">
       <div class="text-center d-flex my-5 mt-30 justify-content-center ">
-        <img class="profile-image position-absolute " src="image/巻物.png" alt="makimono">
+        <img class="image position-absolute " src="image/巻物.png" alt="makimono">
       </div>
       <div class="container col-md-6 p-lg-5 mx-auto my-5">
-      <div class="mx-auto my-5 position-relative">
-        <div class="row d-flex align-items-center justify-content-between mt-4">
-          <div class="text-center mb-3">
-            <h1>プロフィール</h1>
+        <div class="mx-auto my-5 position-relative">
+          <div class="row d-flex align-items-center justify-content-between mt-4">
+            <div class="text-center mb-3">
+              <h1>スキル</h1>
+            </div>
+          </div>
+            <hr>
+            <div class="row d-flex align-items-center justify-content-between">
+              <div class="col-md-5 p-2">
+                <div class="prof-text text-center p-30">
+                  <h3>見方</h3>
+                </div>
+              </div>
+              <div class="col-md-7 p-2">
+                <div class="about_text">
+                  <p>
+                    ⭐️：勉強した<br>⭐️⭐️：苦手だが何かしら使用できる<br>
+                    ⭐️⭐️⭐️：不自由なく使用可能<br>⭐️⭐️⭐️⭐️：得意
+                  </p>
+                  <p><img src="image/arrow.png" style="width: 25px; height: auto;"> scroll</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    <div class="py-5">
+      <div class="container p-lg-5 mx-auto my-5">
+        <div class="row d-flex align-items-center">
+          <div class="text-center tab-conter">
+            <!-- <div class="card-header"> -->
+              <nav　class="list-group list-group-flush">
+                <div class="nav nav-tabs justify-content-center"  id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-design-tab" data-bs-toggle="tab" data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design" aria-selected="true">フロントエンド</button>
+                  <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-back" type="button" role="tab" aria-controls="nav-back" aria-selected="false">バクエンド</button>
+                  <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-DB" type="button" role="tab" aria-controls="nav-DB" aria-selected="false">データベース</button>
+                  <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-server" type="button" role="tab" aria-controls="nav-server" aria-selected="false">インフラ・サーバー</button>
+                  <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-etc" type="button" role="tab" aria-controls="nav-etc" aria-selected="false">その他</button>
+                </div>
+              </nav>
+              
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane active" id="nav-design" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <h4>HTML5</h4>
+
+                </div>
+                <div class="tab-pane fade" id="nav-front" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <h4>javascript</h4>
+                </div>
+                <div class="tab-pane fade" id="nav-back" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <h4>Java(Spring Boot)</h4>
+                </div>
+                <div class="tab-pane fade" id="nav-DB" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <h4>SQL</h4>
+                </div>
+                <div class="tab-pane fade" id="nav-server" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <h4>AWS</h4>
+                </div>
+                <div class="tab-pane fade" id="nav-etc" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <h4>git</h4>
+                </div>
+              </div>
+           </div>
           </div>
         </div>
-          <hr>
-          <div class="row d-flex align-items-center justify-content-between">
-            <div class="col-md-5 p-2">
-              <div class="prof-text text-center p-30">
-                <h4>やんだやんだ</h4>
-                <img alt="こんな顔">
+      </div>
+    </div>
+    </section>
+ 
+
+  <div class="works py-5">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Image</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <h3 class="card-text">このサイト</h3>
+              <p>ー使用言語ー<br>HTML,CSS,javaScript,BootStrap</p>
+              <p>ー詳細ー<br>このサイトです。CSSアニメーションへの苦手意識払拭を図るべく、作成しました。<br>
+                自分の好きなことを詰め込むべく、デザインからコーディングまでを行いました。レスポンスデザインを意識しながらアニメーションを
+              つけることが難しかったです。
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Demo</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">GitHub</button>
+                </div>
               </div>
             </div>
-            <div class="col-md-7 p-2">
-              <div class="about_text">
-                <p>Working in conjunction with humanitarian aid 
-                agencies, we have supported programmes to help
-                alleviate human suffering through animal welfare
-                when people might depend on livestock as their only
-                source of income or food.</p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+              <h3 class="card-text">ぺっふり〜</h3>
+              <p>ー使用言語ー<br>
+                HTML,CSS,javaScript,Jquery,Java,SpringBoot,BootStrap</p>
+              <p>ー詳細ー<br>
+                javaの勉強が一通り終わったため、修作として作成しました。<br>
+                実際に使うことを想定し、ログイン機能、検索機能、会員・フリーペーパー情報の登録機能を付けました。<br>
+                Jqueryのプラグインから送られた画像情報を安全にSpringBootで保存する処理をすることが大変でした。<br>
+                ロゴキャラクターの「Mr.デミグラス氏」の作画は弟です。
+              </p>
+              <p>ーテストー<br>特に、バリデーション、ログイン機能について、テストコードを書き、動作の確認を行いました。</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Demo</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">GitHub</button>
+                </div>
               </div>
-            </div>
-            <div class="p-2">
-              <p>四角:珍事学検定3球、ちょこざいな検定3球、PK(パンケーキ)検定3球</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
 
   </div>
