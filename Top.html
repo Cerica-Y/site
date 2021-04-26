@@ -45,7 +45,7 @@
 </head>
 <body>
 <!-- アニメーションTop -->
-  <div class="top-anime">
+  <div class="top-anime"　id="top">
     <div id="top" class="position-relative text-center">
       
       <div class="star">
@@ -85,7 +85,7 @@
   </div>
 
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">ポートフォリオ名前</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,19 +95,19 @@
       <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarToggleExternalContent">
         <ul class="navbar-nav ms-auto flex-nowrap">
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">TOP</a>
+              <a class="nav-link active" aria-current="page" href="#top">TOP</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">PROFILE</a>
+              <a class="nav-link active" aria-current="page" href="#p-contents">PROFILE</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">SKILL</a>
+              <a class="nav-link active" aria-current="page" href="Top.html">SKILL</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">WORKS</a>
+              <a class="nav-link active" aria-current="page" href="Top.html">WORKS</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
+              <a class="nav-link active" aria-current="page" href="Top.html">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -115,16 +115,22 @@
   </nav>
 
 <!-- プロフィール -->
-  <div class="p-contents cover-container d-flex w-1000 h-1000 p-3 mx-auto flex-column">
-
-    <section class="profile about_part section_padding">
+  <div class="p-contents cover-container d-flex w-1000 h-1000 p-10 mx-auto flex-column" id="p-contents">
+    <section class="profile asection_padding pt-5">
+      <div class="text-center d-flex my-5 mt-30 justify-content-center ">
+        <img class="profile-image position-absolute " src="image/巻物.png" alt="makimono">
+      </div>
       <div class="container col-md-6 p-lg-5 mx-auto my-5">
+      <div class="mx-auto my-5 position-relative">
+        <div class="row d-flex align-items-center justify-content-between mt-4">
+          <div class="text-center mb-3">
+            <h1>プロフィール</h1>
+          </div>
+        </div>
+          <hr>
           <div class="row d-flex align-items-center justify-content-between">
-            <div class="text-center mb-3">
-              <h1>プロフィール</h1>
-            </div>
             <div class="col-md-5 p-2">
-              <div class="prof-text text-center mb-3">
+              <div class="prof-text text-center p-30">
                 <h4>やんだやんだ</h4>
                 <img alt="こんな顔">
               </div>
@@ -138,8 +144,12 @@
                 source of income or food.</p>
               </div>
             </div>
+            <div class="p-2">
+              <p>四角:珍事学検定3球、ちょこざいな検定3球、PK(パンケーキ)検定3球</p>
+            </div>
           </div>
         </div>
+      </div>
     </section>
 
 

@@ -27,7 +27,7 @@ body {
 
   position: relative;
   width: 100%;
-  min-height: 90vh;
+  min-height: 85vh;
 
 }
 
@@ -179,10 +179,16 @@ body {
 }
 
 
+.profile-image{
+  max-height: 700px;
+  width: 65%;
+  height: auto;
+}
+  
 .p-contents{
-  background: linear-gradient(#da7dff, #4d4398) fixed;
-  height: 1000px;
-  margin-top: 0px;
+background: linear-gradient(#da7dff, #4d4398) fixed;
+height: 1000px;
+margin-top: 0px;
 }
 
 
