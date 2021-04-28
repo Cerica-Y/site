@@ -10,6 +10,9 @@ body {
 h1{
   font-weight: bold;
 }
+h4{
+  color: black;
+}
 @media screen and (max-width: 992px) {
     body {
       font-size: 20px;
@@ -189,7 +192,8 @@ h1{
   
 .p-contents{
 background: linear-gradient(#da7dff, #4d4398) fixed;
-height: 2600px;
+width: 100vw;
+height: 100%;
 margin-top: 0px;
 }
 
@@ -210,4 +214,30 @@ margin-top: 0px;
   background-color: white;
 }
 
+.star5_rating{
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  white-space: nowrap;
+  color: #CCCCCC; /* グレーカラー 自由に設定化 */
+  font-size: 20px; 
+}
 
+.star5_rating:before, .star5_rating:after{
+  content: '★★★★';
+}
+
+.star5_rating:after{
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #ffdb4f; 
+}
+
+.star5_rating[data-rate="4"]:after{ width: 100%; } /* 星4 */
+.star5_rating[data-rate="3"]:after{ width: 75%; } /* 星3 */
+.star5_rating[data-rate="2"]:after{ width: 50%; } /* 星2 */
+.star5_rating[data-rate="1"]:after{ width: 25%; } /* 星1 */

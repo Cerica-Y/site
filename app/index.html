@@ -29,22 +29,23 @@
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
     
-    <!-- icon -->
-    
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+  
+  <!-- icomoon icon -->
+  <link rel="stylesheet" type="text/css" href="./css/icomoon.css">
+  <!-- bootstrap main css -->
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!-- sanitize css -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/sanitize.css">
 
-    <!-- bootstrap main css -->
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <!-- sanitize css -->
-    <link rel="stylesheet" href="https://unpkg.com/sanitize.css">
-    <!-- custom stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="css/themesberg.css">
-    <!-- sass -->
-    <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
-    <link rel='stylesheet' href='./star.css'>
+  <!-- custom stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/themesberg.css">
+  <!-- sass -->
+  <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+
 </head>
 <body>
 <!-- アニメーションTop -->
@@ -107,10 +108,10 @@
               <a class="nav-link active" aria-current="page" href="#skill">SKILL</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Top.html">WORKS</a>
+              <a class="nav-link active" aria-current="page" href="#skill">WORKS</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Top.html">CONTACT</a>
+              <a class="nav-link active" aria-current="page" href="#footer">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -118,7 +119,7 @@
   </nav>
 
 <!-- プロフィール -->
-  <div class="p-contents cover-container d-flex w-1000 h-1000 p-10 mx-auto flex-column">
+  <div class="p-contents cover-container d-flex p-10 mx-auto flex-column">
 
     <div id="profile">
       <section class="profile asection_padding pt-5">
@@ -126,13 +127,13 @@
           <img class="image position-absolute " src="image/巻物.png" alt="makimono">
         </div>
         <div class="container col-md-6 p-lg-5 mx-auto my-5">
-        <div class="mx-auto my-5 position-relative">
-          <div class="row d-flex align-items-center justify-content-between mt-4">
-            <div class="text-center mb-3">
-              <h1>プロフィール</h1>
+          <div class="mx-auto my-5 position-relative">
+            <div class="row d-flex align-items-center justify-content-between mt-4">
+              <div class="text-center mb-3">
+                <h1>プロフィール</h1>
+              </div>
             </div>
-          </div>
-            <hr>
+              <hr>
             <div class="row d-flex align-items-center justify-content-between">
               <div class="col-md-5 p-2">
                 <div class="prof-text text-center p-30">
@@ -159,19 +160,19 @@
     </div>
 
   <!-- スキル -->
-  <div id="skill">
-    <section class="skill asection_padding pt-5">
-      <div class="text-center d-flex my-5 mt-30 justify-content-center ">
-        <img class="image position-absolute " src="image/巻物.png" alt="makimono">
-      </div>
-      <div class="container col-md-6 p-lg-5 mx-auto my-5">
-        <div class="mx-auto my-5 position-relative">
-          <div class="row d-flex align-items-center justify-content-between mt-4">
-            <div class="text-center mb-3">
-              <h1>スキル</h1>
+    <div id="skill">
+      <section class="skill asection_padding pt-5">
+        <div class="text-center d-flex my-5 mt-30 justify-content-center ">
+          <img class="image position-absolute " src="image/巻物.png" alt="makimono">
+        </div>
+        <div class="container col-md-6 p-lg-5 mx-auto my-5">
+          <div class="mx-auto my-5 position-relative">
+            <div class="row d-flex align-items-center justify-content-between mt-4">
+              <div class="text-center mb-3">
+                <h1>スキル</h1>
+              </div>
             </div>
-          </div>
-            <hr>
+              <hr>
             <div class="row d-flex align-items-center justify-content-between">
               <div class="col-md-5 p-2">
                 <div class="prof-text text-center p-30">
@@ -181,110 +182,403 @@
               <div class="col-md-7 p-2">
                 <div class="about_text">
                   <p>
-                    ⭐️：勉強した<br>⭐️⭐️：苦手だが何かしら使用できる<br>
-                    ⭐️⭐️⭐️：不自由なく使用可能<br>⭐️⭐️⭐️⭐️：得意
+                    <span class="star5_rating" data-rate="1"></span>：勉強した<br>
+                    <span class="star5_rating" data-rate="2"></span>：チュートリアル終了程度<br>
+                    <span class="star5_rating" data-rate="3"></span>：使用可<br>
+                    <span class="star5_rating" data-rate="4"></span>：不自由なく使用可能
                   </p>
+                  <p>言語横のカッコは,使用可能な主なフレームワークを示します。</p>
                   <p><img src="image/arrow.png" style="width: 25px; height: auto;"> scroll</p>
                 </div>
               </div>
             </div>
           </div>
-      </div>
+        </div>
 
-    <div class="py-5">
-      <div class="container p-lg-5 mx-auto my-5">
-        <div class="row d-flex align-items-center">
-          <div class="text-center tab-conter">
-              <nav　class="list-group list-group-flush">
-                <div class="nav nav-tabs col-md-6 mx-auto"  id="nav-tab" role="tablist">
-                  <button class="nav-link active" id="nav-design-tab" data-bs-toggle="tab" data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design" aria-selected="true">フロントエンド</button>
-                  <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-back" type="button" role="tab" aria-controls="nav-back" aria-selected="false">バックエンド</button>
-                  <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-etc" type="button" role="tab" aria-controls="nav-etc" aria-selected="false">その他</button>
-                </div>
-              </nav>
-              
-              <div class="tab-content col-md-6 mx-auto" id="nav-tabContent">
-                <div class="tab-pane active" id="nav-design" role="tabpanel" aria-labelledby="nav-home-tab">
-                  <h4>ー言語ー</h4>
-                  <div class="container col-md-8 mx-auto my-2">
+        <div class="py-5">
+          <div class="container p-lg-5 mx-auto my-5">
+            <div class="row d-flex align-items-center">
+              <div class="text-center tab-conter">
+                  <nav　class="list-group list-group-flush">
+                    <div class="nav nav-tabs col-md-6 mx-auto"  id="nav-tab" role="tablist">
+                      <button class="nav-link active" id="nav-design-tab" data-bs-toggle="tab" data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design" aria-selected="true">フロントエンド</button>
+                      <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-back" type="button" role="tab" aria-controls="nav-back" aria-selected="false">バックエンド</button>
+                      <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-etc" type="button" role="tab" aria-controls="nav-etc" aria-selected="false">その他</button>
+                    </div>
+                  </nav>
+                
+                  <div class="tab-content col-md-6 mx-auto" id="nav-tabContent">
+                    <div class="tab-pane active" id="nav-design" role="tabpanel" aria-labelledby="nav-home-tab">
+                      <h4>ー言語ー</h4>
+                      <div class="container col-md-8 mx-auto my-2">
+                        <div class="row d-flex align-items-center justify-content-between">
+                          <div class="col-md-5 p-2">
+                            <h5>
+                              <span class="icon-html-five"></span>
+                              HTML5
+                            </h5>
+                        </div>
+                        <div class="col-md-7 p-2">
+                          <div class="about_text">
+                            <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                          </div>
+                        </div>
+                      </div>
+
                       <div class="row d-flex align-items-center justify-content-between">
                         <div class="col-md-5 p-2">
-                          <h5>HTML5</h5>
+                          <h5>
+                            <span class="icon-css3"></span>
+                            <span class="icon-bootstrap"></span>
+                            CSS5<br>(BootStrap)
+                          </h5>
+                        </div>
+                        <div class="col-md-7 p-2">
+                          <div class="about_text">
+                            <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-javascript"></span>
+                            JavaScript
+                          </h5>
+                        </div>
+                        <div class="col-md-7 p-2">
+                          <div class="about_text">
+                            <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-sass"></span>
+                            Sass
+                          </h5>
+                        </div>
+                        <div class="col-md-7 p-2">
+                          <div class="about_text">
+                            <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="tab-pane fade" id="nav-back" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <h4>ー言語ー</h4>
+                    <div class="container col-md-8 mx-auto my-2">
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-java"></span>
+                            <span class="icon-spring"></span>
+                            Java<br>(Spring Boot)
+                          </h5>
+                        </div>
+                        <div class="col-md-7 p-2">
+                          <div class="about_text">
+                            <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-php"></span>
+                            <span class="icon-laravel"></span>
+                            PHP(Laravel)
+                          </h5>
+                        </div>
+                        <div class="col-md-7 p-2">
+                          <div class="about_text">
+                            <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-ruby"></span>
+                            <span class="icon-rails"></span>
+                            Ruby<br>(Ruby on Rails5)
+                          </h5>
+                        </div>
+                        <div class="col-md-7 p-2">
+                          <div class="about_text">
+                            <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-python"></span>
+                            Python
+                          </h5>
+                        </div>
+                        <div class="col-md-7 p-2">
+                          <div class="about_text">
+                            <p><span class="star5_rating" data-rate="1"></span> 星1</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-node-dot-js"></span>
+                            Node.js
+                          </h5>
+                        </div>
+                        <div class="col-md-7 p-2">
+                          <div class="about_text">
+                            <p><span class="star5_rating" data-rate="3"></span> 星3</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    <h4>ーデータベースー</h4>
+                    <div class="row d-flex align-items-center justify-content-between">
+                      <div class="col-md-5 p-2">
+                        <h5>
+                          <span class="icon-mysql"></span>
+                          MySQL
+                        </h5>
+                      </div>
+                      <div class="col-md-7 p-2">
+                        <div class="about_text">
+                          <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h4>ーインフラ・サーバー</h4>
+                    <div class="row d-flex align-items-center justify-content-between">
+                      <div class="col-md-5 p-2">
+                        <h5>
+                          <span class="icon-amazonaws"></span>
+                          AWS
+                        </h5>
+                      </div>
+                      <div class="col-md-7 p-2">
+                        <div class="about_text">
+                          <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row d-flex align-items-center justify-content-between">
+                      <div class="col-md-5 p-2">
+                        <h5>
+                          <span class="icon-apache"></span>
+                          Apache
+                        </h5>
+                      </div>
+                      <div class="col-md-7 p-2">
+                        <div class="about_text">
+                          <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row d-flex align-items-center justify-content-between">
+                      <div class="col-md-5 p-2">
+                        <h5>
+                          <span class="icon-docker"></span>
+                          Docker
+                        </h5>
+                      </div>
+                      <div class="col-md-7 p-2">
+                        <div class="about_text">
+                          <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-etc" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <h4>ー言語ー</h4>
+                    <div class="container col-md-8 mx-auto my-2">
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-swift"></span>
+                            swift<br>(SwiftUI)
+                          </h5>
                         </div>
                           <div class="col-md-7 p-2">
                             <div class="about_text">
-                              <p><span class="star-rating" data-rate="3"></span></p>
+                              <p><span class="star5_rating" data-rate="2"></span> 星2</p>
                             </div>
                           </div>
                       </div>
-                          <h4>ーフレームワークー</h4>
+                      
+                      <h4>ーOSー</h4>
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-appleinc"></span>
+                            macOS
+                          </h5>
+                        </div>
+                          <div class="col-md-7 p-2">
+                            <div class="about_text">
+                              <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row d-flex align-items-center justify-content-between">
+                          <div class="col-md-5 p-2">
+                            <h5>
+                              <span class="icon-windows"></span>
+                              Windows
+                            </h5>
+                          </div>
+                            <div class="col-md-7 p-2">
+                              <div class="about_text">
+                                <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row d-flex align-items-center justify-content-between">
+                          <div class="col-md-5 p-2">
+                            <h5>
+                              <span class="icon-tux"></span>
+                              Linux
+                            </h5>
+                          </div>
+                          <div class="col-md-7 p-2">
+                            <div class="about_text">
+                              <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                            </div>
+                          </div>
+                      </div>
+                      <h4>ーデザインー</h4>
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-adobexd"></span>
+                            Adobe XD
+                          </h5>
+                        </div>
+                          <div class="col-md-7 p-2">
+                            <div class="about_text">
+                              <p><span class="star5_rating" data-rate="3"></span> 星3</p>
+                            </div>
+                          </div>
+                      </div>
+
+                      <h4>ーライブラリー</h4>
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-jquery"></span>
+                            JQuery
+                          </h5>
+                        </div>
+                          <div class="col-md-7 p-2">
+                            <div class="about_text">
+                              <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                            </div>
+                          </div>
+                      </div>
+
+                      <h4>ー管理ー</h4>
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-github"></span>
+                            <span class="icon-git"></span>
+                            git/GitHub
+                          </h5>
+                        </div>
+                          <div class="col-md-7 p-2">
+                            <div class="about_text">
+                              <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-npm"></span>
+                            npm
+                          </h5>
+                        </div>
+                          <div class="col-md-7 p-2">
+                            <div class="about_text">
+                              <p><span class="star5_rating" data-rate="3"></span> 星3</p>
+                            </div>
+                          </div>
+                      </div>
+                      
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="nav-back" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <h4>ー言語ー</h4>
-                  <h4>ーフレームワークー</h4>
-                  <h4>ーデータベースー</h4>
-                  <h4>ーインフラ・サーバー</h4>
-                </div>
-                <div class="tab-pane fade" id="nav-etc" role="tabpanel" aria-labelledby="nav-contact-tab">
-                  <h4>ーOSー</h4>
-                  <h4>ーデザインー</h4>
-                  <h4>ーパッケージー</h4>
-                  <h4>ー管理ー</h4>
-                </div>
-              </div>
-           </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-    </section>
+      </section>
+    </div>
  
+    <div class="works py-5">
+      <div class="container">
 
-  <div class="works py-5">
-    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Image</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Image</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <h3 class="card-text">このサイト</h3>
-              <p>ー使用言語ー<br>HTML,CSS,javaScript,BootStrap</p>
-              <p>ー詳細ー<br>このサイトです。トップのアニメーションはCSSアニメーションへの苦手意識払拭を図るべく、作成しました。<br>
-                自分の好きなことを詰め込むべく、デザインからコーディングまでを行いました。レスポンスデザインを意識しながらアニメーションを
-              つけることが難しかったです。
-              </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Demo</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">GitHub</button>
+              <div class="card-body">
+                <h4 class="card-text">このサイト</h4>
+                <p>ー使用言語ー<br>HTML,CSS,javaScript,BootStrap</p>
+                <p>ー詳細ー<br>このサイトです。トップのアニメーションはCSSアニメーションへの苦手意識払拭を図るべく、作成しました。<br>
+                  自分の好きなことを詰め込むべく、デザインからコーディングまでを行いました。レスポンスデザインを意識しながらアニメーションを
+                つけることが難しかったです。
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Demo</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">GitHub</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-            <div class="card-body">
-              <h3 class="card-text">ぺっふり〜</h3>
-              <p>ー使用言語ー<br>
-                HTML,CSS,javaScript,Jquery,Java,SpringBoot,BootStrap</p>
-              <p>ー詳細ー<br>
-                javaの勉強が一通り終わったため、修作として作成しました。<br>
-                ご当地ものフリーペーパーの情報が集まったページがあれば、観光などの集客にもつながるのではないかと考えました。
-                実際に使うことを想定し、ログイン機能、検索機能、会員・フリーペーパー情報の登録機能を付けました。<br>
-                Jqueryのプラグインから送られた画像情報を安全にSpringBootで保存する処理をすることが大変でした。<br>
-                ロゴキャラクターの「Mr.デミグラス氏」の作画は弟です。
-              </p>
-              <p>ーテストー<br>特に、バリデーション、ログイン機能について、テストコードを書き、動作の確認を行いました。</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Demo</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">GitHub</button>
+              <div class="card-body">
+                <h4 class="card-text">ぺっふり〜</h4>
+                <p>ー使用言語ー<br>
+                  HTML,CSS,javaScript,Jquery,Java,SpringBoot,BootStrap</p>
+                <p>ー詳細ー<br>
+                  javaの勉強が一通り終わったため、修作として作成しました。<br>
+                  ご当地ものフリーペーパーの情報が集まったページがあれば、観光などの集客にもつながるのではないかと考えました。
+                  実際に使うことを想定し、ログイン機能、検索機能、会員・フリーペーパー情報の登録機能を付けました。<br>
+                  Jqueryのプラグインから送られた画像情報を安全にSpringBootで保存する処理をすることが大変でした。<br>
+                  ロゴキャラクターの「Mr.デミグラス氏」の作画は弟です。
+                </p>
+                <p>ーテストー<br>特に、バリデーション、ログイン機能について、テストコードを書き、動作の確認を行いました。</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Demo</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">GitHub</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -292,12 +586,34 @@
         </div>
       </div>
     </div>
-
-
   </div>
 
 
-  <footer></footer>
+
+  <footer class="text-center bg-dark text-lg-start" id="footer">
+    <a class="mx-auto d-flex justify-content-center pt-3" href="#">ポートフォリオ名前</a>
+
+    <div class="container d-flex justify-content-center py-3">
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
+
+        <span class="icon-twitter"></span>
+      </button>
+        
+      <div class="mx-2">
+        <span class="icon-mail2"></span>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-white p-3">
+      <small>
+        <p>© 2021 Copyright:
+      MDBootstrap.com</p>
+    </small>
+    </div>
+  
+    <!-- Copyright -->
+  </footer>
 
 
  
