@@ -42,6 +42,9 @@
     <!-- custom stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="css/themesberg.css">
+    <!-- sass -->
+    <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
+    <link rel='stylesheet' href='./star.css'>
 </head>
 <body>
 <!-- アニメーションTop -->
@@ -192,43 +195,49 @@
       <div class="container p-lg-5 mx-auto my-5">
         <div class="row d-flex align-items-center">
           <div class="text-center tab-conter">
-            <!-- <div class="card-header"> -->
               <nav　class="list-group list-group-flush">
-                <div class="nav nav-tabs justify-content-center"  id="nav-tab" role="tablist">
+                <div class="nav nav-tabs col-md-6 mx-auto"  id="nav-tab" role="tablist">
                   <button class="nav-link active" id="nav-design-tab" data-bs-toggle="tab" data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design" aria-selected="true">フロントエンド</button>
-                  <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-back" type="button" role="tab" aria-controls="nav-back" aria-selected="false">バクエンド</button>
-                  <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-DB" type="button" role="tab" aria-controls="nav-DB" aria-selected="false">データベース</button>
-                  <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-server" type="button" role="tab" aria-controls="nav-server" aria-selected="false">インフラ・サーバー</button>
+                  <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-back" type="button" role="tab" aria-controls="nav-back" aria-selected="false">バックエンド</button>
                   <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-etc" type="button" role="tab" aria-controls="nav-etc" aria-selected="false">その他</button>
                 </div>
               </nav>
               
-              <div class="tab-content" id="nav-tabContent">
+              <div class="tab-content col-md-6 mx-auto" id="nav-tabContent">
                 <div class="tab-pane active" id="nav-design" role="tabpanel" aria-labelledby="nav-home-tab">
-                  <h4>HTML5</h4>
-
+                  <h4>ー言語ー</h4>
+                  <div class="container col-md-8 mx-auto my-2">
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>HTML5</h5>
+                        </div>
+                          <div class="col-md-7 p-2">
+                            <div class="about_text">
+                              <p><span class="star-rating" data-rate="3"></span></p>
+                            </div>
+                          </div>
+                      </div>
+                          <h4>ーフレームワークー</h4>
+                    </div>
+                  </div>
                 </div>
-                <div class="tab-pane fade" id="nav-front" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <h4>javascript</h4>
-                </div>
-                <div class="tab-pane fade" id="nav-back" role="tabpanel" aria-labelledby="nav-contact-tab">
-                  <h4>Java(Spring Boot)</h4>
-                </div>
-                <div class="tab-pane fade" id="nav-DB" role="tabpanel" aria-labelledby="nav-contact-tab">
-                  <h4>SQL</h4>
-                </div>
-                <div class="tab-pane fade" id="nav-server" role="tabpanel" aria-labelledby="nav-contact-tab">
-                  <h4>AWS</h4>
+                <div class="tab-pane fade" id="nav-back" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <h4>ー言語ー</h4>
+                  <h4>ーフレームワークー</h4>
+                  <h4>ーデータベースー</h4>
+                  <h4>ーインフラ・サーバー</h4>
                 </div>
                 <div class="tab-pane fade" id="nav-etc" role="tabpanel" aria-labelledby="nav-contact-tab">
-                  <h4>git</h4>
+                  <h4>ーOSー</h4>
+                  <h4>ーデザインー</h4>
+                  <h4>ーパッケージー</h4>
+                  <h4>ー管理ー</h4>
                 </div>
               </div>
            </div>
-          </div>
         </div>
       </div>
-    </div>
+
     </section>
  
 
