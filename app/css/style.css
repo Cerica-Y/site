@@ -16,6 +16,7 @@ h4{
 @media screen and (max-width: 992px) {
     body {
       font-size: 20px;
+      
     }
 
 }
@@ -107,7 +108,7 @@ h4{
   width: 35px;
 	height: 35px;
 	border-radius: 50%;
-  background-color: #ffdb4f;
+  background-color: #f39800;
   position: absolute;
   top: 110px;
   left: 30px;
@@ -116,7 +117,7 @@ h4{
   width: 35px;
 	height: 35px;
 	border-radius: 50%;
-  background-color: #ffdb4f;
+  background-color: #f39800;
   position: absolute;
   top: 110px;
   left: 66px;
@@ -125,7 +126,7 @@ h4{
   width: 35px;
 	height: 35px;
 	border-radius: 50%;
-  background-color: #ffdb4f;
+  background-color: #f39800;
   position: absolute;
   top: 110px;
   left: 102px;
@@ -160,6 +161,7 @@ h4{
   right: 0;
 }
 
+
 /* 牛 */
 .cow-conter{
   position: relative;
@@ -191,10 +193,13 @@ h4{
 }
   
 .p-contents{
-background: linear-gradient(#da7dff, #4d4398) fixed;
+background: linear-gradient(#da7dff, #4d4398);
 width: 100vw;
 height: 100%;
 margin-top: 0px;
+
+position: relative;
+/* background-image: url(image/松.png) no-repeat; */
 }
 
 
@@ -202,7 +207,7 @@ margin-top: 0px;
   padding-left: 0;
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-  border-top: solid 10px #ffdb4f;
+  border-top: solid 10px #ffec47;
 }
 
 .nav-tabs .nav-link{
@@ -213,6 +218,12 @@ margin-top: 0px;
   padding: 1em 1.5em;
   background-color: white;
 }
+.card-body{
+   border-top: 5px solid #ffec47;
+}
+.rotate-fa{
+  transform: rotate(180deg);
+ }
 
 .star5_rating{
   position: relative;
@@ -234,10 +245,35 @@ margin-top: 0px;
   left: 0;
   overflow: hidden;
   white-space: nowrap;
-  color: #ffdb4f; 
+  color: #f39800; 
 }
 
 .star5_rating[data-rate="4"]:after{ width: 100%; } /* 星4 */
 .star5_rating[data-rate="3"]:after{ width: 75%; } /* 星3 */
 .star5_rating[data-rate="2"]:after{ width: 50%; } /* 星2 */
 .star5_rating[data-rate="1"]:after{ width: 25%; } /* 星1 */
+
+.works{
+  z-index: 1;
+}
+.footer-anime{
+  position: relative;
+  /* padding-bottom: 120px;←footerの高さ */
+  /* box-sizing: border-box; */
+}
+
+.tree{
+  background: url(../image/松.png) no-repeat;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  bottom: 0;
+}
+.hill2{
+  width: 100%;
+	height: 70px;
+	border-radius: 50% / 100% 100% 0 0;
+	background: #005243;
+  position: absolute;
+  bottom: 0;
+}

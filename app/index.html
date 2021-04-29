@@ -46,6 +46,7 @@
   <!-- sass -->
   <link rel='stylesheet' href='https://unpkg.com/ress/dist/ress.min.css'>
 
+
 </head>
 <body>
 <!-- アニメーションTop -->
@@ -78,7 +79,7 @@
       <div class="cow-conter">
         <div class="shadow"></div>
         <div id="cow">
-            <img class="cow" src="image/k0368_1.png" alt="牛" title="牛">
+          <img class="cow" src="image/k0368_1.png" alt="牛" title="牛">
         </div>
       </div>
 
@@ -168,7 +169,7 @@
         <div class="container col-md-6 p-lg-5 mx-auto my-5">
           <div class="mx-auto my-5 position-relative">
             <div class="row d-flex align-items-center justify-content-between mt-4">
-              <div class="text-center mb-3">
+              <div class="text-center mb-2">
                 <h1>スキル</h1>
               </div>
             </div>
@@ -195,28 +196,25 @@
           </div>
         </div>
 
-        <div class="py-5">
-          <div class="container p-lg-5 mx-auto my-5">
-            <div class="row d-flex align-items-center">
-              <div class="text-center tab-conter">
-                  <nav　class="list-group list-group-flush">
-                    <div class="nav nav-tabs col-md-6 mx-auto"  id="nav-tab" role="tablist">
-                      <button class="nav-link active" id="nav-design-tab" data-bs-toggle="tab" data-bs-target="#nav-design" type="button" role="tab" aria-controls="nav-design" aria-selected="true">フロントエンド</button>
-                      <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-back" type="button" role="tab" aria-controls="nav-back" aria-selected="false">バックエンド</button>
-                      <button class="nav-link" id="nav-back-tab" data-bs-toggle="tab" data-bs-target="#nav-etc" type="button" role="tab" aria-controls="nav-etc" aria-selected="false">その他</button>
-                    </div>
-                  </nav>
-                
-                  <div class="tab-content col-md-6 mx-auto" id="nav-tabContent">
-                    <div class="tab-pane active" id="nav-design" role="tabpanel" aria-labelledby="nav-home-tab">
-                      <h4>ー言語ー</h4>
-                      <div class="container col-md-8 mx-auto my-2">
-                        <div class="row d-flex align-items-center justify-content-between">
-                          <div class="col-md-5 p-2">
-                            <h5>
-                              <span class="icon-html-five"></span>
-                              HTML5
-                            </h5>
+        <div class="wrapper">
+          <div class="container p-lg-5 mx-auto col-md-6 my-5" >
+            <div class="row d-flex align-items-center ">
+              <div class="card">
+                <div class="card-title text-center" id="headingOne">
+                  <a class="btn btn-primary　bt-white fw-bold fs-4" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                    フロントエンド
+                  </a>
+                </div>
+                <div class="collapse mb-3" id="collapse1">
+                  <div class="card card-body">
+                    <h4 class="text-center">ー言語ー</h4>
+                    <div class="container col-md-8 mx-auto my-2 text-center">
+                      <div class="row d-flex align-items-center justify-content-between">
+                        <div class="col-md-5 p-2">
+                          <h5>
+                            <span class="icon-html-five"></span>
+                            HTML5
+                          </h5>
                         </div>
                         <div class="col-md-7 p-2">
                           <div class="about_text">
@@ -224,7 +222,7 @@
                           </div>
                         </div>
                       </div>
-
+                    
                       <div class="row d-flex align-items-center justify-content-between">
                         <div class="col-md-5 p-2">
                           <h5>
@@ -266,92 +264,29 @@
                             <p><span class="star5_rating" data-rate="2"></span> 星2</p>
                           </div>
                         </div>
+
                       </div>
+                      
                     </div>
                   </div>
-                  
-                  <div class="tab-pane fade" id="nav-back" role="tabpanel" aria-labelledby="nav-profile-tab">
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-title text-center" id="headingTwo">
+                  <a class="btn btn-primary　bt-white fw-bold fs-4" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                    バックエンド
+                  </a>
+                </div>
+                <div class="collapse mb-3" id="collapse2">
+                  <div class="card card-body text-center">
                     <h4>ー言語ー</h4>
-                    <div class="container col-md-8 mx-auto my-2">
-                      <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-md-5 p-2">
-                          <h5>
-                            <span class="icon-java"></span>
-                            <span class="icon-spring"></span>
-                            Java<br>(Spring Boot)
-                          </h5>
-                        </div>
-                        <div class="col-md-7 p-2">
-                          <div class="about_text">
-                            <p><span class="star5_rating" data-rate="4"></span> 星4</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-md-5 p-2">
-                          <h5>
-                            <span class="icon-php"></span>
-                            <span class="icon-laravel"></span>
-                            PHP(Laravel)
-                          </h5>
-                        </div>
-                        <div class="col-md-7 p-2">
-                          <div class="about_text">
-                            <p><span class="star5_rating" data-rate="2"></span> 星2</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-md-5 p-2">
-                          <h5>
-                            <span class="icon-ruby"></span>
-                            <span class="icon-rails"></span>
-                            Ruby<br>(Ruby on Rails5)
-                          </h5>
-                        </div>
-                        <div class="col-md-7 p-2">
-                          <div class="about_text">
-                            <p><span class="star5_rating" data-rate="2"></span> 星2</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-md-5 p-2">
-                          <h5>
-                            <span class="icon-python"></span>
-                            Python
-                          </h5>
-                        </div>
-                        <div class="col-md-7 p-2">
-                          <div class="about_text">
-                            <p><span class="star5_rating" data-rate="1"></span> 星1</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-md-5 p-2">
-                          <h5>
-                            <span class="icon-node-dot-js"></span>
-                            Node.js
-                          </h5>
-                        </div>
-                        <div class="col-md-7 p-2">
-                          <div class="about_text">
-                            <p><span class="star5_rating" data-rate="3"></span> 星3</p>
-                          </div>
-                        </div>
-                      </div>
-
-                    <h4>ーデータベースー</h4>
                     <div class="row d-flex align-items-center justify-content-between">
                       <div class="col-md-5 p-2">
                         <h5>
-                          <span class="icon-mysql"></span>
-                          MySQL
+                          <span class="icon-java"></span>
+                          <span class="icon-spring"></span>
+                          Java<br>(Spring Boot)
                         </h5>
                       </div>
                       <div class="col-md-7 p-2">
@@ -361,12 +296,12 @@
                       </div>
                     </div>
 
-                    <h4>ーインフラ・サーバー</h4>
                     <div class="row d-flex align-items-center justify-content-between">
                       <div class="col-md-5 p-2">
                         <h5>
-                          <span class="icon-amazonaws"></span>
-                          AWS
+                          <span class="icon-php"></span>
+                          <span class="icon-laravel"></span>
+                          PHP(Laravel)
                         </h5>
                       </div>
                       <div class="col-md-7 p-2">
@@ -379,8 +314,9 @@
                     <div class="row d-flex align-items-center justify-content-between">
                       <div class="col-md-5 p-2">
                         <h5>
-                          <span class="icon-apache"></span>
-                          Apache
+                          <span class="icon-ruby"></span>
+                          <span class="icon-rails"></span>
+                          Ruby<br>(Ruby on Rails5)
                         </h5>
                       </div>
                       <div class="col-md-7 p-2">
@@ -393,56 +329,198 @@
                     <div class="row d-flex align-items-center justify-content-between">
                       <div class="col-md-5 p-2">
                         <h5>
-                          <span class="icon-docker"></span>
-                          Docker
+                          <span class="icon-python"></span>
+                          Python
                         </h5>
                       </div>
                       <div class="col-md-7 p-2">
                         <div class="about_text">
-                          <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                          <p><span class="star5_rating" data-rate="1"></span> 星1</p>
                         </div>
                       </div>
                     </div>
+
+                    <div class="row d-flex align-items-center justify-content-between">
+                      <div class="col-md-5 p-2">
+                        <h5>
+                          <span class="icon-node-dot-js"></span>
+                          Node.js
+                        </h5>
+                      </div>
+                      <div class="col-md-7 p-2">
+                        <div class="about_text">
+                          <p><span class="star5_rating" data-rate="3"></span> 星3</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  <h4>ーデータベースー</h4>
+                  <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-md-5 p-2">
+                      <h5>
+                        <span class="icon-mysql"></span>
+                        MySQL
+                      </h5>
+                    </div>
+                    <div class="col-md-7 p-2">
+                      <div class="about_text">
+                        <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                      </div>
                     </div>
                   </div>
 
-                  <div class="tab-pane fade" id="nav-etc" role="tabpanel" aria-labelledby="nav-contact-tab">
-                    <h4>ー言語ー</h4>
-                    <div class="container col-md-8 mx-auto my-2">
-                      <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-md-5 p-2">
-                          <h5>
-                            <span class="icon-swift"></span>
-                            swift<br>(SwiftUI)
-                          </h5>
-                        </div>
-                          <div class="col-md-7 p-2">
-                            <div class="about_text">
-                              <p><span class="star5_rating" data-rate="2"></span> 星2</p>
-                            </div>
-                          </div>
+                  <h4>ーインフラ・サーバー</h4>
+                  <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-md-5 p-2">
+                      <h5>
+                        <span class="icon-amazonaws"></span>
+                        AWS
+                      </h5>
+                    </div>
+                    <div class="col-md-7 p-2">
+                      <div class="about_text">
+                        <p><span class="star5_rating" data-rate="2"></span> 星2</p>
                       </div>
-                      
-                      <h4>ーOSー</h4>
-                      <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-md-5 p-2">
-                          <h5>
-                            <span class="icon-appleinc"></span>
-                            macOS
-                          </h5>
-                        </div>
-                          <div class="col-md-7 p-2">
-                            <div class="about_text">
-                              <p><span class="star5_rating" data-rate="4"></span> 星4</p>
-                            </div>
-                          </div>
-                        </div>
+                    </div>
+                  </div>
 
+                  <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-md-5 p-2">
+                      <h5>
+                        <span class="icon-apache"></span>
+                        Apache
+                      </h5>
+                    </div>
+                    <div class="col-md-7 p-2">
+                      <div class="about_text">
+                        <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-md-5 p-2">
+                      <h5>
+                        <span class="icon-docker"></span>
+                        Docker
+                      </h5>
+                    </div>
+                    <div class="col-md-7 p-2">
+                      <div class="about_text">
+                        <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-title text-center" id="headingTwo">
+                  <a class="btn btn-primary　bt-white fw-bold fs-4" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                    その他
+                  </a>
+                </div>
+                <div class="collapse mb-3" id="collapse3">
+                  <div class="card card-body accordion-menu text-center">
+                    <h4>ー言語ー</h4>
+                      <div class="container col-md-8 mx-auto my-2">
                         <div class="row d-flex align-items-center justify-content-between">
                           <div class="col-md-5 p-2">
                             <h5>
-                              <span class="icon-windows"></span>
-                              Windows
+                              <span class="icon-swift"></span>
+                              swift<br>(SwiftUI)
+                            </h5>
+                          </div>
+                            <div class="col-md-7 p-2">
+                              <div class="about_text">
+                                <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        <h4>ーOSー</h4>
+                        <div class="row d-flex align-items-center justify-content-between">
+                          <div class="col-md-5 p-2">
+                            <h5>
+                              <span class="icon-appleinc"></span>
+                              macOS
+                            </h5>
+                          </div>
+                            <div class="col-md-7 p-2">
+                              <div class="about_text">
+                                <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row d-flex align-items-center justify-content-between">
+                            <div class="col-md-5 p-2">
+                              <h5>
+                                <span class="icon-windows"></span>
+                                Windows
+                              </h5>
+                            </div>
+                              <div class="col-md-7 p-2">
+                                <div class="about_text">
+                                  <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                                </div>
+                              </div>
+                          </div>
+
+                          <div class="row d-flex align-items-center justify-content-between">
+                            <div class="col-md-5 p-2">
+                              <h5>
+                                <span class="icon-tux"></span>
+                                Linux
+                              </h5>
+                            </div>
+                            <div class="col-md-7 p-2">
+                              <div class="about_text">
+                                <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                              </div>
+                            </div>
+                        </div>
+                        <h4>ーデザインー</h4>
+                        <div class="row d-flex align-items-center justify-content-between">
+                          <div class="col-md-5 p-2">
+                            <h5>
+                              <span class="icon-adobexd"></span>
+                              Adobe XD
+                            </h5>
+                          </div>
+                            <div class="col-md-7 p-2">
+                              <div class="about_text">
+                                <p><span class="star5_rating" data-rate="3"></span> 星3</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <h4>ーライブラリー</h4>
+                        <div class="row d-flex align-items-center justify-content-between">
+                          <div class="col-md-5 p-2">
+                            <h5>
+                              <span class="icon-jquery"></span>
+                              JQuery
+                            </h5>
+                          </div>
+                            <div class="col-md-7 p-2">
+                              <div class="about_text">
+                                <p><span class="star5_rating" data-rate="4"></span> 星4</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <h4>ー管理ー</h4>
+                        <div class="row d-flex align-items-center justify-content-between">
+                          <div class="col-md-5 p-2">
+                            <h5>
+                              <span class="icon-github"></span>
+                              <span class="icon-git"></span>
+                              git/GitHub
                             </h5>
                           </div>
                             <div class="col-md-7 p-2">
@@ -455,82 +533,25 @@
                         <div class="row d-flex align-items-center justify-content-between">
                           <div class="col-md-5 p-2">
                             <h5>
-                              <span class="icon-tux"></span>
-                              Linux
+                              <span class="icon-npm"></span>
+                              npm
                             </h5>
                           </div>
-                          <div class="col-md-7 p-2">
-                            <div class="about_text">
-                              <p><span class="star5_rating" data-rate="2"></span> 星2</p>
+                            <div class="col-md-7 p-2">
+                              <div class="about_text">
+                                <p><span class="star5_rating" data-rate="3"></span> 星3</p>
+                              </div>
                             </div>
-                          </div>
-                      </div>
-                      <h4>ーデザインー</h4>
-                      <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-md-5 p-2">
-                          <h5>
-                            <span class="icon-adobexd"></span>
-                            Adobe XD
-                          </h5>
                         </div>
-                          <div class="col-md-7 p-2">
-                            <div class="about_text">
-                              <p><span class="star5_rating" data-rate="3"></span> 星3</p>
-                            </div>
-                          </div>
-                      </div>
 
-                      <h4>ーライブラリー</h4>
-                      <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-md-5 p-2">
-                          <h5>
-                            <span class="icon-jquery"></span>
-                            JQuery
-                          </h5>
-                        </div>
-                          <div class="col-md-7 p-2">
-                            <div class="about_text">
-                              <p><span class="star5_rating" data-rate="4"></span> 星4</p>
-                            </div>
-                          </div>
-                      </div>
-
-                      <h4>ー管理ー</h4>
-                      <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-md-5 p-2">
-                          <h5>
-                            <span class="icon-github"></span>
-                            <span class="icon-git"></span>
-                            git/GitHub
-                          </h5>
-                        </div>
-                          <div class="col-md-7 p-2">
-                            <div class="about_text">
-                              <p><span class="star5_rating" data-rate="4"></span> 星4</p>
-                            </div>
-                          </div>
-                      </div>
-
-                      <div class="row d-flex align-items-center justify-content-between">
-                        <div class="col-md-5 p-2">
-                          <h5>
-                            <span class="icon-npm"></span>
-                            npm
-                          </h5>
-                        </div>
-                          <div class="col-md-7 p-2">
-                            <div class="about_text">
-                              <p><span class="star5_rating" data-rate="3"></span> 星3</p>
-                            </div>
-                          </div>
-                      </div>
-                      
-                    </div>
                   </div>
                 </div>
+              </div>
+              </div>
             </div>
           </div>
         </div>
+
       </section>
     </div>
  
@@ -586,40 +607,41 @@
         </div>
       </div>
     </div>
+    
   </div>
-
-
+<!-- アニメ -->
+<div class="footer-anime">
+  <div class="tree"></div>
+  <div class="hill2"></div>
+</div>
 
   <footer class="text-center bg-dark text-lg-start" id="footer">
-    <a class="mx-auto d-flex justify-content-center pt-3" href="#">ポートフォリオ名前</a>
-
-    <div class="container d-flex justify-content-center py-3">
-      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2">
-
-        <span class="icon-twitter"></span>
-      </button>
-        
-      <div class="mx-2">
-        <span class="icon-mail2"></span>
+    <div class="container d-flex justify-content-center">
+      
+      <div class="py-3 text-white text-center">
+        <a class="text-decoration-none text-white fs-4" href="#top">ポートフォリオ名前</a>
+        <h5 class="mt-2"><span class="icon-mail2"></span> aaaaa@aaaa</h5>
       </div>
+      
     </div>
-
+    
     <!-- Copyright -->
-    <div class="text-center text-white p-3">
+    <div class="text-center text-white p-2">
       <small>
         <p>© 2021 Copyright:
-      MDBootstrap.com</p>
-    </small>
-    </div>
-  
-    <!-- Copyright -->
-  </footer>
+          MDBootstrap.com</p>
+        </small>
+      </div>
+      <!-- Copyright -->
+    </footer>
 
 
  
   <!-- jquery -->
-<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <!-- bootstrap -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" ></script>
+
+  <script src="js/anime.js"></script>
 </body>
 </html>
