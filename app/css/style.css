@@ -33,21 +33,33 @@ h4{
 
   position: relative;
   width: 100%;
-  max-height: 90vh;
+  max-height: 95vh;
 
 }
 
-.star .star1{
+.star1{
   width: 10px;
   height: 10px;
-  position: absolute;
-  top: 15%;
-  left: 20%;
   background-color: #f8e58c;
   transform: rotate(45deg);
 
   animation: bg-color 5s infinite;
   -webkit-animation: bg-color 3s infinite;
+}
+.starA{
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+.starB{
+  position: absolute;
+  top: 17%;
+  left: 60%;
+}
+.starC{
+  position: absolute;
+  top: 40%;
+  right: 26%;
 }
 @-webkit-keyframes bg-color {
   0% { background-color: #f5b1aa; }
@@ -55,6 +67,34 @@ h4{
   40% { background-color: #93ca76; }
   60% { background-color: #bce2e8; }
   80% { background-color: #dbd0e6; }
+  100% { background-color: #f5b1aa; }
+}
+
+.star2{
+  width: 10px;
+  height: 10px;
+  background-color: #93ca76;
+  transform: rotate(45deg);
+
+  animation: bg-color 3s infinite;
+  -webkit-animation: bg-color 2s infinite;
+}
+.starD{
+  position: absolute;
+  top: 80%;
+  left: 32%;
+}
+.starE{
+  position: absolute;
+  top: 55%;
+  left: 10%;
+}
+@-webkit-keyframes bg-color {
+  0% { background-color: #f5b1aa; }
+  20% { background-color: #bce2e8; }
+  40% { background-color: #dbd0e6; }
+  60% { background-color: #f8e58c; }
+  80% { background-color: #93ca76; }
   100% { background-color: #f5b1aa; }
 }
 /* ufo */
@@ -253,9 +293,10 @@ position: relative;
 .star5_rating[data-rate="2"]:after{ width: 50%; } /* 星2 */
 .star5_rating[data-rate="1"]:after{ width: 25%; } /* 星1 */
 
-.works{
+.works, #skill{
   z-index: 1;
 }
+
 .footer-anime{
   position: relative;
   /* padding-bottom: 120px;←footerの高さ */
@@ -276,4 +317,19 @@ position: relative;
 	background: #005243;
   position: absolute;
   bottom: 0;
+}
+.cloud{
+  background: url(../image/霞.png) no-repeat;
+  position: absolute;
+  width: 530px;
+  height: 150px;
+  bottom: 140vh;
+  right: 0;
+}
+.cloud2{
+  background: url(../image/霞.png) no-repeat;
+  position: absolute;
+  width: 530px;
+  height: 150px;
+  bottom: 100vh;
 }
