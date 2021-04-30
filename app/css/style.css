@@ -13,27 +13,48 @@ h1{
 h4{
   color: black;
 }
+@media all and (max-width: 480px) {
+  body {
+    font-size: 16px;
+  }
+  h1{
+    font-size: 1em;
+  }
+  p{
+    font-size: 20px;
+  }
+ }
 @media screen and (max-width: 992px) {
     body {
       font-size: 20px;
-      
     }
 
 }
-@media screen and (max-width: 480px) {
-  figure figcaption {
-    width: 100%;
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 30px;
+  }
+  .cow{
+    top: 90vh;
+  }
+  .image{
+    width: 400px;
+  }
+  .wrapper-conteiner{
+    width: 65vw;
   }
 }
+
 
 /* 初期 */
 #top{
   margin-top: 0px;
   background: linear-gradient(#4d4398,#da7dff);
 
+  
   position: relative;
   width: 100%;
-  max-height: 95vh;
+  min-height: 90vh;
 
 }
 
@@ -53,8 +74,8 @@ h4{
 }
 .starB{
   position: absolute;
-  top: 17%;
-  left: 60%;
+  top: 50%;
+  left: 40%;
 }
 .starC{
   position: absolute;
@@ -89,6 +110,11 @@ h4{
   top: 55%;
   left: 10%;
 }
+.starF{
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
 @-webkit-keyframes bg-color {
   0% { background-color: #f5b1aa; }
   20% { background-color: #bce2e8; }
@@ -97,9 +123,53 @@ h4{
   80% { background-color: #93ca76; }
   100% { background-color: #f5b1aa; }
 }
+.star3{
+  width: 10px;
+  height: 10px;
+  background-color: #f5b1aa;
+  transform: rotate(45deg);
+
+  animation: bg-color 4s infinite;
+  -webkit-animation: bg-color 2s infinite;
+}
+.starG{
+  position: absolute;
+  top: 70%;
+  right: 30%;
+}
+.starH{
+  position: absolute;
+  top: 17%;
+  left: 60%;
+}
+@-webkit-keyframes bg-color {
+  0% { background-color: #93ca76; }
+  20% { background-color: #f5b1aa; }
+  40% { background-color: #dbd0e6; }
+  60% { background-color: #f8e58c; }
+  80% { background-color: #ca76c6; }
+  100% { background-color: #bce2e8; }
+}
 /* ufo */
 .ufo-conter{
   position: relative;
+  /* height: 50vh; */
+  /* width: 100%; */
+  
+}
+#ufo{
+  width: 100%;
+  -webkit-animation: ufo 2s forwards;
+  transform: translateY(100px);
+}
+@-webkit-keyframes ufo {
+  0% {
+    transform: translateX(0px);
+    }
+  
+    100% {
+    transform: translateX(43%);
+    }
 }
 
 .ufo-conter .ufo-body{
@@ -193,7 +263,7 @@ h4{
 /* 丘 */
 .hill{
   width: 100%;
-	height: 70px;
+	height: 80px;
 	border-radius: 50% / 100% 100% 0 0;
 	background: #005243;
   position: absolute;
@@ -205,24 +275,24 @@ h4{
 /* 牛 */
 .cow-conter{
   position: relative;
-  width:50%;
-  height:650px;
-  display:block;
-  margin: auto;
+  /* width:50%; */
+  /* height:650px; */
+  /* display:block; */
+  /* margin: auto; */
 }
 .shadow{
   width: 120px;
-	height: 30px;
+	height: 20px;
   border-radius: 50%;
   background-color: #1f3134;
   position: absolute;
-  top: 590px;
+  top: 81vh;
   left: 50%;
 }
 .cow{
   width: 100px;
   position: absolute;
-  top: 530px;
+  top: 72vh;
 }
 
 
