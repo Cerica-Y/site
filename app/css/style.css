@@ -23,19 +23,21 @@ h4{
   p{
     font-size: 20px;
   }
+  
  }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 750px) {
     body {
       font-size: 20px;
     }
-
+    
 }
+
 @media screen and (max-width: 1024px) {
   body {
     font-size: 30px;
   }
-  .cow{
-    top: 90vh;
+  #cow{
+    top: 78vh !important;
   }
   .image{
     width: 400px;
@@ -44,7 +46,10 @@ h4{
     width: 65vw;
   }
 }
-
+@media screen and (max-width: 2600px) {
+  
+  
+}
 
 /* 初期 */
 #top{
@@ -275,10 +280,7 @@ h4{
 /* 牛 */
 .cow-conter{
   position: relative;
-  /* width:50%; */
-  /* height:650px; */
-  /* display:block; */
-  /* margin: auto; */
+  
 }
 .shadow{
   width: 120px;
@@ -289,10 +291,14 @@ h4{
   top: 81vh;
   left: 50%;
 }
-.cow{
-  width: 100px;
+#cow{
+  background: url(../image/k0368_1.png) no-repeat;
   position: absolute;
+  width: 100px;
+  height: 100px;
   top: 72vh;
+  left: 50%;
+  background-size: 100%;
 }
 
 
