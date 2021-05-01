@@ -13,43 +13,53 @@ h1{
 h4{
   color: black;
 }
-@media all and (max-width: 480px) {
-  body {
-    font-size: 16px;
-  }
-  h1{
-    font-size: 1em;
-  }
-  p{
-    font-size: 20px;
-  }
+/*====================
+スマホを基本設計にする
+ - 〜479px：スマートフォン縦
+ - 480px〜599px：スマートフォン横
+ - 600px〜959px：タブレット
+ - 960px〜1279px：小型PC
+ - 1280px〜：大型PC
+====================*/
   
+/* 480px〜599px：SP横
+------------------------------ */
+@media screen and (min-width:480px) and (max-width:599px) { 
+ #cow{
+   top: 55vh !important;
+   left: 45% !important;
  }
-@media screen and (max-width: 750px) {
-    body {
-      font-size: 20px;
-    }
-    
 }
-
-@media screen and (max-width: 1024px) {
-  body {
-    font-size: 30px;
-  }
+  
+/* 600px〜959px：タブレット
+------------------------------ */
+@media screen and (min-width:600px) and (max-width:959px) {
   #cow{
     top: 78vh !important;
-  }
-  .image{
-    width: 400px;
-  }
-  .wrapper-conteiner{
-    width: 65vw;
+    left: 45% !important;
   }
 }
-@media screen and (max-width: 2600px) {
   
-  
+/* 960px〜1279px：小型PC
+------------------------------ */
+@media screen and (min-width:960px) and (max-width:1240px) {
+  #cow{
+    top: 80vh !important;
+    left: 45% !important;
+  }
 }
+  
+/* 1280px〜：大型PC
+------------------------------ */
+@media screen and (min-width:1240px) {
+  /* .cow-conter{
+    bottom: 14vh !important;
+  } */
+  #top{
+    min-height: 90vh !important;
+  } 
+}
+
 
 /* 初期 */
 #top{
@@ -158,12 +168,15 @@ h4{
 /* ufo */
 .ufo-conter{
   position: relative;
-  /* height: 50vh; */
+  top: 6em;
   /* width: 100%; */
-  
+  right: 13%;
 }
 #ufo{
+  position: relative;
   width: 100%;
+  z-index: 4;
+
   -webkit-animation: ufo 2s forwards;
   transform: translateY(100px);
 }
@@ -173,7 +186,7 @@ h4{
     }
   
     100% {
-    transform: translateX(43%);
+    transform: translateX(42%);
     }
 }
 
@@ -264,6 +277,21 @@ h4{
   top: 18px;
   left: 77px;
 }
+.light{
+  position: relative;
+  left: 20%;
+  top: 22vh;
+  
+}
+.light1{
+  position: relative;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 120px 450px 120px;
+  border-color: transparent transparent #ffec47 transparent;
+  opacity: 0.5;
+}
 
 /* 丘 */
 .hill{
@@ -280,7 +308,7 @@ h4{
 /* 牛 */
 .cow-conter{
   position: relative;
-  
+  right: 10%;
 }
 .shadow{
   width: 120px;
@@ -289,7 +317,7 @@ h4{
   background-color: #1f3134;
   position: absolute;
   top: 81vh;
-  left: 50%;
+  left: 45%;
 }
 #cow{
   background: url(../image/k0368_1.png) no-repeat;
@@ -297,8 +325,11 @@ h4{
   width: 100px;
   height: 100px;
   top: 72vh;
-  left: 50%;
-  background-size: 100%;
+  /* margin-top: 100%;
+  background-position: bottom; */
+  left: 45%;
+  /* background-position: center; */
+  background-size: contain;
 }
 
 
