@@ -1,0 +1,38 @@
+.works, #skill{
+    z-index: 1;
+  }
+
+.footer-anime{
+    position: relative;
+
+    .tree{
+        background: url(../image/松.png) no-repeat;
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        bottom: 0;
+      }
+      .hill2{
+        width: 100%;
+          height: 70px;
+          border-radius: 50% / 100% 100% 0 0;
+          background: #005243;
+        position: absolute;
+        bottom: 0;
+      }
+      .cloud{
+        background: url(../image/霞.png) no-repeat;
+        position: absolute;
+        width: 530px;
+        height: 150px;
+        bottom: 140vh;
+        right: 0;
+      }
+      .cloud2{
+        background: url(../image/霞.png) no-repeat;
+        position: absolute;
+        width: 530px;
+        height: 150px;
+        bottom: 100vh;
+      }
+  }

@@ -1,0 +1,270 @@
+// 丘
+.hill{
+    width: 100%;
+    height: 80px;
+    border-radius: 50% / 100% 100% 0 0;
+    background: #005243;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+// 星
+@mixin keyframes($animation-name: animaton) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+@mixin animate($name, $duration, $iteration, $direction) {
+    -webkit-animation-duration: $duration;
+       -moz-animation-duration: $duration;
+         -o-animation-duration: $duration;
+            animation-duration: $duration;
+    -webkit-animation-iteration-count: $iteration;
+       -moz-animation-iteration-count: $iteration;
+         -o-animation-iteration-count: $iteration;
+            animation-iteration-count: $iteration;
+    -webkit-animation-name: $name;
+       -moz-animation-name: $name;
+         -o-animation-name: $name;
+            animation-name: $name;
+    -webkit-animation-direction: $direction;
+       -moz-animation-direction: $direction;
+         -o-animation-direction: $direction;
+            animation-direction: $direction;
+  }
+
+
+@include keyframes (bg-color1) {
+    0% { background-color: #f5b1aa; }
+    20% { background-color: #f8e58c; }
+    40% { background-color: #93ca76; }
+    60% { background-color: #bce2e8; }
+    80% { background-color: #dbd0e6; }
+    100% { background-color: #f5b1aa; }
+}
+
+@include keyframes (bg-color2) {
+    0% { background-color: #f5b1aa; }
+    20% { background-color: #bce2e8; }
+    40% { background-color: #dbd0e6; }
+    60% { background-color: #f8e58c; }
+    80% { background-color: #93ca76; }
+    100% { background-color: #f5b1aa; }
+}
+
+@include keyframes (bg-color3) {
+    0% { background-color: #93ca76; }
+    20% { background-color: #f5b1aa; }
+    40% { background-color: #dbd0e6; }
+    60% { background-color: #f8e58c; }
+    80% { background-color: #ca76c6; }
+    100% { background-color: #bce2e8; }
+}
+@mixin bg-color1 {
+    @include animate(bg-color1, 6s, infinite, normal);
+  }
+@mixin bg-color2 {
+  @include animate(bg-color2, 4s, infinite, normal);
+}
+@mixin bg-color3 {
+    @include animate(bg-color2, 2s, infinite, normal);
+  }
+
+.star1{
+    width: 10px;
+    height: 10px;
+    background-color: #f8e58c;
+    transform: rotate(45deg);
+    @include bg-color1;
+}
+.starA{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+  }
+  .starB{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+  }
+  .starC{
+    position: absolute;
+    top: 40%;
+    right: 26%;
+  }
+  .star2{
+    width: 10px;
+    height: 10px;
+    background-color: #93ca76;
+    transform: rotate(45deg);
+    @include bg-color2;
+  }
+  .starD{
+    position: absolute;
+    top: 80%;
+    left: 32%;
+  }
+  .starE{
+    position: absolute;
+    top: 55%;
+    left: 10%;
+  }
+  .starF{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+  }
+  .star3{
+    width: 10px;
+    height: 10px;
+    background-color: #f5b1aa;
+    transform: rotate(45deg);
+    @include bg-color3;
+  }
+  .starG{
+    position: absolute;
+    top: 70%;
+    right: 30%;
+  }
+  .starH{
+    position: absolute;
+    top: 17%;
+    left: 60%;
+  }
+
+
+// ufo
+.ufo-conter{
+    position: relative;
+    top: 6em;
+    // right: 13%;
+
+#ufo{
+    position: relative;
+    width: 100%;
+    z-index: 4;
+  }
+
+  .ufo-body{
+    width: 112px;
+    height: 60px;
+    border-radius: 50% / 100% 100% 0 0;
+    background-color: #d4dcda;
+    position: absolute;
+    left: 29px;
+    top: 55px;
+  }
+  .ufo-bottom{
+    width: 170px;
+    border-bottom: 30px solid #2ca9e1;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    height: 0;
+    position: absolute;
+    top: 100px;
+  }
+  .ufo-circle1{
+    width: 20px;
+    height: 20px;
+    background-color: #59b9c6;
+    position: absolute;
+    top: 76px;
+    left: 45px;
+  }
+  .ufo-circle2{
+    width: 20px;
+    height: 20px;
+    background-color: #59b9c6;
+    position: absolute;
+    top: 76px;
+    left: 105px;
+  }
+  .ufo-circle3{
+    width: 20px;
+    height: 20px;
+    background-color: #59b9c6;
+    position: absolute;
+    top: 76px;
+    left: 75px;
+  }
+  .ufo-light1{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f39800;
+    position: absolute;
+    top: 110px;
+    left: 30px;
+  }
+  .ufo-light2{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f39800;
+    position: absolute;
+    top: 110px;
+    left: 66px;
+  }
+  .ufo-light3{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #f39800;
+    position: absolute;
+    top: 110px;
+    left: 102px;
+  }
+  .ufo-chobin1{
+    margin-left: 100px;
+    width: 3px;
+    height: 22px;
+    background-color: brown;
+    position: absolute;
+    top: 33px;
+    left: -16px;
+  }
+  .ufo-chobin2{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #eb6ea5;
+    position: absolute;
+    top: 18px;
+    left: 77px;
+  }
+} 
+
+// 牛
+.cow-conter{
+    position: relative;
+    // right: 10%;
+
+    .shadow{
+        width: 120px;
+          height: 20px;
+        border-radius: 50%;
+        background-color: #1f3134;
+        position: absolute;
+        top: 81vh;
+        left: 50%;
+      }
+      #cow{
+        background: url(../image/k0368_1.png) no-repeat;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 72vh;
+        /* margin-top: 100%;
+        background-position: bottom; */
+        left: 50%;
+        
+        background-size: contain;
+      }
+  }

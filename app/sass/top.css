@@ -1,0 +1,366 @@
+.hill {
+  width: 100%;
+  height: 80px;
+  border-radius: 50% / 100% 100% 0 0;
+  background: #005243;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@-webkit-keyframes bg-color1 {
+  0% {
+    background-color: #f5b1aa;
+  }
+  20% {
+    background-color: #f8e58c;
+  }
+  40% {
+    background-color: #93ca76;
+  }
+  60% {
+    background-color: #bce2e8;
+  }
+  80% {
+    background-color: #dbd0e6;
+  }
+  100% {
+    background-color: #f5b1aa;
+  }
+}
+
+@keyframes bg-color1 {
+  0% {
+    background-color: #f5b1aa;
+  }
+  20% {
+    background-color: #f8e58c;
+  }
+  40% {
+    background-color: #93ca76;
+  }
+  60% {
+    background-color: #bce2e8;
+  }
+  80% {
+    background-color: #dbd0e6;
+  }
+  100% {
+    background-color: #f5b1aa;
+  }
+}
+
+@-webkit-keyframes bg-color2 {
+  0% {
+    background-color: #f5b1aa;
+  }
+  20% {
+    background-color: #bce2e8;
+  }
+  40% {
+    background-color: #dbd0e6;
+  }
+  60% {
+    background-color: #f8e58c;
+  }
+  80% {
+    background-color: #93ca76;
+  }
+  100% {
+    background-color: #f5b1aa;
+  }
+}
+
+@keyframes bg-color2 {
+  0% {
+    background-color: #f5b1aa;
+  }
+  20% {
+    background-color: #bce2e8;
+  }
+  40% {
+    background-color: #dbd0e6;
+  }
+  60% {
+    background-color: #f8e58c;
+  }
+  80% {
+    background-color: #93ca76;
+  }
+  100% {
+    background-color: #f5b1aa;
+  }
+}
+
+@-webkit-keyframes bg-color3 {
+  0% {
+    background-color: #93ca76;
+  }
+  20% {
+    background-color: #f5b1aa;
+  }
+  40% {
+    background-color: #dbd0e6;
+  }
+  60% {
+    background-color: #f8e58c;
+  }
+  80% {
+    background-color: #ca76c6;
+  }
+  100% {
+    background-color: #bce2e8;
+  }
+}
+
+@keyframes bg-color3 {
+  0% {
+    background-color: #93ca76;
+  }
+  20% {
+    background-color: #f5b1aa;
+  }
+  40% {
+    background-color: #dbd0e6;
+  }
+  60% {
+    background-color: #f8e58c;
+  }
+  80% {
+    background-color: #ca76c6;
+  }
+  100% {
+    background-color: #bce2e8;
+  }
+}
+
+.star1 {
+  width: 10px;
+  height: 10px;
+  background-color: #f8e58c;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bg-color1;
+  animation-name: bg-color1;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+
+.starA {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+
+.starB {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+.starC {
+  position: absolute;
+  top: 40%;
+  right: 26%;
+}
+
+.star2 {
+  width: 10px;
+  height: 10px;
+  background-color: #93ca76;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bg-color2;
+  animation-name: bg-color2;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+
+.starD {
+  position: absolute;
+  top: 80%;
+  left: 32%;
+}
+
+.starE {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+}
+
+.starF {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.star3 {
+  width: 10px;
+  height: 10px;
+  background-color: #f5b1aa;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bg-color2;
+  animation-name: bg-color2;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+
+.starG {
+  position: absolute;
+  top: 70%;
+  right: 30%;
+}
+
+.starH {
+  position: absolute;
+  top: 17%;
+  left: 60%;
+}
+
+.ufo-conter {
+  position: relative;
+  top: 6em;
+}
+
+.ufo-conter #ufo {
+  position: relative;
+  width: 100%;
+  z-index: 4;
+}
+
+.ufo-conter .ufo-body {
+  width: 112px;
+  height: 60px;
+  border-radius: 50% / 100% 100% 0 0;
+  background-color: #d4dcda;
+  position: absolute;
+  left: 29px;
+  top: 55px;
+}
+
+.ufo-conter .ufo-bottom {
+  width: 170px;
+  border-bottom: 30px solid #2ca9e1;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+  position: absolute;
+  top: 100px;
+}
+
+.ufo-conter .ufo-circle1 {
+  width: 20px;
+  height: 20px;
+  background-color: #59b9c6;
+  position: absolute;
+  top: 76px;
+  left: 45px;
+}
+
+.ufo-conter .ufo-circle2 {
+  width: 20px;
+  height: 20px;
+  background-color: #59b9c6;
+  position: absolute;
+  top: 76px;
+  left: 105px;
+}
+
+.ufo-conter .ufo-circle3 {
+  width: 20px;
+  height: 20px;
+  background-color: #59b9c6;
+  position: absolute;
+  top: 76px;
+  left: 75px;
+}
+
+.ufo-conter .ufo-light1 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f39800;
+  position: absolute;
+  top: 110px;
+  left: 30px;
+}
+
+.ufo-conter .ufo-light2 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f39800;
+  position: absolute;
+  top: 110px;
+  left: 66px;
+}
+
+.ufo-conter .ufo-light3 {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f39800;
+  position: absolute;
+  top: 110px;
+  left: 102px;
+}
+
+.ufo-conter .ufo-chobin1 {
+  margin-left: 100px;
+  width: 3px;
+  height: 22px;
+  background-color: brown;
+  position: absolute;
+  top: 33px;
+  left: -16px;
+}
+
+.ufo-conter .ufo-chobin2 {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #eb6ea5;
+  position: absolute;
+  top: 18px;
+  left: 77px;
+}
+
+.cow-conter {
+  position: relative;
+}
+
+.cow-conter .shadow {
+  width: 120px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #1f3134;
+  position: absolute;
+  top: 81vh;
+  left: 50%;
+}
+
+.cow-conter #cow {
+  background: url(../image/k0368_1.png) no-repeat;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 72vh;
+  /* margin-top: 100%;
+        background-position: bottom; */
+  left: 50%;
+  background-size: contain;
+}
+/*# sourceMappingURL=top.css.map */

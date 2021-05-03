@@ -1,5 +1,5 @@
 
-body {
+/* body {
     font-family: 'Kiwi Maru', serif;
     font-weight: 300;
     font-size: 16px;
@@ -12,7 +12,7 @@ h1{
 }
 h4{
   color: black;
-}
+} */
 /*====================
 スマホを基本設計にする
  - 〜479px：スマートフォン縦
@@ -62,7 +62,7 @@ h4{
 
 
 /* 初期 */
-#top{
+/* #top{
   margin-top: 0px;
   background: linear-gradient(#4d4398,#da7dff);
 
@@ -71,7 +71,7 @@ h4{
   width: 100%;
   min-height: 90vh;
 
-}
+} */
 
 .star1{
   width: 10px;
@@ -166,12 +166,12 @@ h4{
   100% { background-color: #bce2e8; }
 }
 /* ufo */
-.ufo-conter{
+/* .ufo-conter{
   position: relative;
   top: 6em;
-  /* width: 100%; */
+  /* width: 100%;
   right: 13%;
-}
+} */
 #ufo{
   position: relative;
   width: 100%;
@@ -294,7 +294,7 @@ h4{
 }
 
 /* 丘 */
-.hill{
+/* .hill{
   width: 100%;
 	height: 80px;
 	border-radius: 50% / 100% 100% 0 0;
@@ -302,7 +302,7 @@ h4{
   position: absolute;
   bottom: 0;
   right: 0;
-}
+} */
 
 
 /* 牛 */
@@ -333,13 +333,13 @@ h4{
 }
 
 
-.image{
+/* .image{
   max-width: 60%;
   height: auto;
 
-}
+} */
   
-.p-contents{
+/* .p-contents{
 background: linear-gradient(#da7dff, #4d4398);
 width: 100vw;
 height: 100%;
@@ -347,7 +347,7 @@ margin-top: 0px;
 
 position: relative;
 /* background-image: url(image/松.png) no-repeat; */
-}
+/* }  */
 
 
 .nav{
@@ -372,12 +372,12 @@ position: relative;
   transform: rotate(180deg);
  }
 
-.star5_rating{
+/* .star5_rating{
   position: relative;
   z-index: 0;
   display: inline-block;
   white-space: nowrap;
-  color: #CCCCCC; /* グレーカラー 自由に設定化 */
+  color: #CCCCCC;
   font-size: 20px; 
 }
 
@@ -398,7 +398,8 @@ position: relative;
 .star5_rating[data-rate="4"]:after{ width: 100%; } /* 星4 */
 .star5_rating[data-rate="3"]:after{ width: 75%; } /* 星3 */
 .star5_rating[data-rate="2"]:after{ width: 50%; } /* 星2 */
-.star5_rating[data-rate="1"]:after{ width: 25%; } /* 星1 */
+.star5_rating[data-rate="1"]:after{ width: 25%; } /*星1 */
+*/
 
 .works, #skill{
   z-index: 1;
