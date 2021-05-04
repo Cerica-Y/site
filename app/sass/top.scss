@@ -1,41 +1,11 @@
-@mixin keyframes($ufo-anime) {
-  @-webkit-keyframes #{$ufo-anime} {
-    @content; 
-  }
-  @keyframes #{$ufo-anime} {
-    @content;
-  } 
+
+@-webkit-keyframes ufo{
+  0% { transform: translateX(0); }
+  50%{transform: translate(-50%); transform:scale(2.2);}
+  100% { transform: translate(-100%); }
+
 }
-@mixin animate($name, $duration, $iteration, $direction) {
-  -webkit-animation-duration: $duration;
-     -moz-animation-duration: $duration;
-       -o-animation-duration: $duration;
-          animation-duration: $duration;
-  -webkit-animation-iteration-count: $iteration;
-     -moz-animation-iteration-count: $iteration;
-       -o-animation-iteration-count: $iteration;
-          animation-iteration-count: $iteration;
-  -webkit-animation-name: $name;
-     -moz-animation-name: $name;
-       -o-animation-name: $name;
-          animation-name: $name;
-  -webkit-animation-direction: $direction;
-     -moz-animation-direction: $direction;
-       -o-animation-direction: $direction;
-          animation-direction: $direction;
-}
-@include keyframes(ufo){
-  0% {
-    transform: translateX(0px);
-    }
-  
-    100% {
-    transform: translateX(60%);
-    }
-}
-@mixin UFO {
-  @include animate(ufo, 4s, 1, reverse);
-}
+
 
 // 丘
 .hill{
@@ -47,17 +17,21 @@
     bottom: 0;
     right: 0;
 }
-
+#top{
+  overflow: hidden;
+}
 // ufo
 .ufo-conter{
     position: relative;
     top: 6em;
-    left: 45%;
-    @include UFO;
-  &#ufo{
+
+    left:100%;
+    -webkit-animation: ufo 6s ease-in-out infinite;
+  #ufo{
       position: relative;
       width: 100%;
       z-index: 4;
+      
     }
 
   & .ufo-body{

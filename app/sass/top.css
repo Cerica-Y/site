@@ -1,22 +1,17 @@
 @-webkit-keyframes ufo {
   0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
   }
   100% {
-    -webkit-transform: translateX(60%);
-            transform: translateX(60%);
-  }
-}
-
-@keyframes ufo {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    -webkit-transform: translateX(60%);
-            transform: translateX(60%);
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
   }
 }
 
@@ -30,21 +25,18 @@
   right: 0;
 }
 
+#top {
+  overflow: hidden;
+}
+
 .ufo-conter {
   position: relative;
   top: 6em;
-  left: 45%;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-name: ufo;
-  animation-name: ufo;
-  -webkit-animation-direction: reverse;
-  animation-direction: reverse;
+  left: 100%;
+  -webkit-animation: ufo 6s ease-in-out infinite;
 }
 
-.ufo-conter#ufo {
+.ufo-conter #ufo {
   position: relative;
   width: 100%;
   z-index: 4;
