@@ -3,15 +3,50 @@
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  50% {
+  100% {
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
     -webkit-transform: scale(2.2);
             transform: scale(2.2);
   }
+}
+
+@keyframes ufo {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
   100% {
-    -webkit-transform: translate(-100%);
-            transform: translate(-100%);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+  }
+}
+
+@-webkit-keyframes light {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes light {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -32,14 +67,15 @@
 .ufo-conter {
   position: relative;
   top: 6em;
+  z-index: 10;
   left: 100%;
-  -webkit-animation: ufo 6s ease-in-out infinite;
+  -webkit-animation: ufo 6s ease-in-out forwards;
+          animation: ufo 6s ease-in-out forwards;
 }
 
 .ufo-conter #ufo {
   position: relative;
   width: 100%;
-  z-index: 4;
 }
 
 .ufo-conter .ufo-body {
@@ -137,6 +173,25 @@
   position: absolute;
   top: 18px;
   left: 77px;
+}
+
+.light {
+  position: relative;
+  z-index: 4;
+  left: 45%;
+  top: 40vh;
+  -webkit-animation: light 6s linear forwards;
+          animation: light 6s linear forwards;
+}
+
+.light .light1 {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 120px 320px 120px;
+  border-color: transparent transparent #ffec47 transparent;
+  opacity: 0.5;
 }
 
 .cow-conter {
