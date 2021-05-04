@@ -56,8 +56,8 @@
 }
 
 .star-back .starB {
-  top: -275vh;
-  left: 90%;
+  top: -367vh;
+  left: 85%;
 }
 
 .star-back .starC {
@@ -66,7 +66,7 @@
 }
 
 .star-back .starD {
-  top: -360vh;
+  top: -390vh;
   left: 40%;
 }
 
@@ -76,17 +76,32 @@
 }
 
 .star-back .starF {
-  top: -325vh;
+  top: -285vh;
   right: 10%;
 }
 
 .star-back .starG {
-  top: -250vh;
+  top: -300vh;
   left: 50%;
 }
 
 .star-back .starH {
   top: -320vh;
+  left: 10%;
+}
+
+.star-back .starI {
+  top: -210vh;
+  left: 50%;
+}
+
+.star-back .starJ {
+  top: -350vh;
+  left: 50%;
+}
+
+.star-back .starK {
+  top: -400vh;
   left: 10%;
 }
 /*# sourceMappingURL=back.css.map */

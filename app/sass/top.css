@@ -1,3 +1,25 @@
+@-webkit-keyframes ufo {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
+  }
+}
+
+@keyframes ufo {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
+  }
+}
+
 .hill {
   width: 100%;
   height: 80px;
@@ -11,9 +33,18 @@
 .ufo-conter {
   position: relative;
   top: 6em;
+  left: 45%;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-name: ufo;
+  animation-name: ufo;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
 }
 
-.ufo-conter #ufo {
+.ufo-conter#ufo {
   position: relative;
   width: 100%;
   z-index: 4;
