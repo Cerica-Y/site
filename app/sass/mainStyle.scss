@@ -77,4 +77,11 @@ h4{
 .card-body{
    border-top: 5px solid #ffec47;
 }
-
+.accordion-button:not(.collapsed){
+  color: black;
+  background-color: #ffec47;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+// .mb-3 {
+//   margin-bottom: 0 !important;
+// }

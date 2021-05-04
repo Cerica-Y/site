@@ -1,5 +1,10 @@
 @charset "UTF-8";
+@import url(app/sass/star.scss);
 .works, #skill {
+  z-index: 1;
+}
+
+#profile {
   z-index: 1;
 }
 
@@ -29,7 +34,7 @@
   position: absolute;
   width: 530px;
   height: 150px;
-  bottom: 140vh;
+  bottom: 150vh;
   right: 0;
 }
 
@@ -39,5 +44,49 @@
   width: 530px;
   height: 150px;
   bottom: 100vh;
+}
+
+.star-back {
+  position: relative;
+}
+
+.star-back .starA {
+  top: -200vh;
+  left: 10%;
+}
+
+.star-back .starB {
+  top: -275vh;
+  left: 90%;
+}
+
+.star-back .starC {
+  top: -260vh;
+  left: 15%;
+}
+
+.star-back .starD {
+  top: -360vh;
+  left: 40%;
+}
+
+.star-back .starE {
+  top: -220vh;
+  left: 92%;
+}
+
+.star-back .starF {
+  top: -325vh;
+  right: 10%;
+}
+
+.star-back .starG {
+  top: -250vh;
+  left: 50%;
+}
+
+.star-back .starH {
+  top: -320vh;
+  left: 10%;
 }
 /*# sourceMappingURL=back.css.map */
