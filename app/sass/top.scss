@@ -1,10 +1,22 @@
 
 @keyframes ufo{
-  0% { transform: translateX(0); }
-  100%{transform: translate(-50%); transform:scale(2.2); }
-  // 100% { transform: translate(-100%); }
+  0% {
+    transform: translate(0);
+  }
+  100%{
+    transform: translate(-50%); 
+    transform:scale(2.2);
+  }
 }
 @keyframes ufo-fade{
+  0% {
+    transform: translate(-50%);
+    transform:scale(2.2);
+  }
+  100%{
+    transform: translate(-100%); 
+    opacity: 0;
+  }
 }
 @keyframes light{
   0% {
@@ -17,10 +29,31 @@
   }
 }
 @keyframes light-fadeup{
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
 }
 @keyframes cow-fadeup{
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-60%);
+  }
 }
 @keyframes shadow-fade{
+  0% {
+    transform:scale(1);
+  }
+  100%{
+    transform:scale(0);
+    opacity: 0;
+  }
 }
 
 // 丘
@@ -43,11 +76,11 @@
     z-index: 10;
 
     left: 100%;
-    animation: ufo 6s ease-in-out forwards;
-  #ufo{
+    animation: ufo 6s ease-in-out forwards,ufo-fade 6s ease-in-out 14s forwards;
+
+    #ufo{
       position: relative;
       width: 100%;
-      
     }
 
 
@@ -146,6 +179,7 @@
   z-index: 4;
   left: 45%;
   top: 40vh;
+  animation: light-fadeup 3s ease 11s forwards;
 
   .light{
     width: 0;
@@ -158,11 +192,9 @@
   }
 }
 
-
 // 牛
 .cow-conter{
     position: relative;
-    // right: 10%;
 
     .shadow{
         width: 120px;
@@ -172,6 +204,8 @@
         position: absolute;
         top: 81vh;
         left: 50%;
+
+        animation: shadow-fade 3s ease 8s forwards;
       }
       #cow{
         background: url(../image/k0368_1.png) no-repeat;
@@ -179,11 +213,9 @@
         width: 100px;
         height: 100px;
         top: 72vh;
-        /* margin-top: 100%;
-        background-position: bottom; */
         left: 50%;
         
         background-size: contain;
+        animation:cow-fadeup 3s ease 8s forwards;
       }
   }
-

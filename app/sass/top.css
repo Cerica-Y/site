@@ -1,7 +1,7 @@
 @-webkit-keyframes ufo {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
   100% {
     -webkit-transform: translate(-50%);
@@ -13,8 +13,8 @@
 
 @keyframes ufo {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translate(0);
+            transform: translate(0);
   }
   100% {
     -webkit-transform: translate(-50%);
@@ -24,20 +24,35 @@
   }
 }
 
-@-webkit-keyframes ufo-fade {}
-
-@keyframes ufo-fade {}@-webkit-keyframes light {
+@-webkit-keyframes ufo-fade {
   0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
   }
   100% {
-    opacity: 0.5;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+    opacity: 0;
   }
-}@keyframes light {
+}
+
+@keyframes ufo-fade {
+  0% {
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    -webkit-transform: scale(2.2);
+            transform: scale(2.2);
+  }
+  100% {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes light {
   0% {
     opacity: 0;
     -webkit-transform: translateY(-30px);
@@ -50,9 +65,92 @@
   }
 }
 
-@-webkit-keyframes light-fadeup {}
+@keyframes light {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 0.5;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 
-@keyframes light-fadeup {}@-webkit-keyframes cow-fadeup {}@keyframes cow-fadeup {}@-webkit-keyframes shadow-fade {}@keyframes shadow-fade {}.hill {
+@-webkit-keyframes light-fadeup {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+@keyframes light-fadeup {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+}
+
+@-webkit-keyframes cow-fadeup {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+  }
+}
+
+@keyframes cow-fadeup {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-60%);
+            transform: translateY(-60%);
+  }
+}
+
+@-webkit-keyframes shadow-fade {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes shadow-fade {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.hill {
   width: 100%;
   height: 80px;
   border-radius: 50% / 100% 100% 0 0;
@@ -71,8 +169,8 @@
   top: 6em;
   z-index: 10;
   left: 100%;
-  -webkit-animation: ufo 6s ease-in-out forwards;
-          animation: ufo 6s ease-in-out forwards;
+  -webkit-animation: ufo 6s ease-in-out forwards,ufo-fade 6s ease-in-out 14s forwards;
+          animation: ufo 6s ease-in-out forwards,ufo-fade 6s ease-in-out 14s forwards;
 }
 
 .ufo-conter #ufo {
@@ -182,6 +280,8 @@
   z-index: 4;
   left: 45%;
   top: 40vh;
+  -webkit-animation: light-fadeup 3s ease 11s forwards;
+          animation: light-fadeup 3s ease 11s forwards;
 }
 
 .light-contents .light {
@@ -207,6 +307,8 @@
   position: absolute;
   top: 81vh;
   left: 50%;
+  -webkit-animation: shadow-fade 3s ease 8s forwards;
+          animation: shadow-fade 3s ease 8s forwards;
 }
 
 .cow-conter #cow {
@@ -215,9 +317,9 @@
   width: 100px;
   height: 100px;
   top: 72vh;
-  /* margin-top: 100%;
-        background-position: bottom; */
   left: 50%;
   background-size: contain;
+  -webkit-animation: cow-fadeup 3s ease 8s forwards;
+          animation: cow-fadeup 3s ease 8s forwards;
 }
 /*# sourceMappingURL=top.css.map */
