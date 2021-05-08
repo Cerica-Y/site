@@ -1,3 +1,4 @@
+@import "responsive.scss";
 
 @keyframes ufo{
   0% {
@@ -88,6 +89,10 @@
 
     left: 100%;
     animation: ufo 6s ease-in-out forwards,ufo-fade 6s ease-in-out 14s forwards;
+
+    @include respond(pc-lg){
+      top: 60vh;
+    }
 
     #ufo{
       position: relative;
@@ -192,6 +197,11 @@
   top: 40vh;
   animation: light-fadeup 3s ease 11s forwards;
 
+  @include respond(pc-lg){
+    top: 70vh;
+    left: 40%;
+  }
+
   .light{
     width: 0;
     height: 0;
@@ -200,6 +210,11 @@
     border-color: transparent transparent #ffec47 transparent;
     opacity: 0;
     animation: light 3s ease 6s forwards;
+
+    @include respond(pc-lg){
+      border-width: 0 200px 400px 200px;
+  
+    }
   }
 }
 
@@ -217,6 +232,13 @@
         left: 50%;
 
         animation: shadow-fade 3s ease 8s forwards;
+
+        @include respond(pc-lg){
+          top: 86vh;
+          width: 220px;
+          height: 60px;
+          left: 44%;
+        }
       }
       #cow{
         background: url(../image/k0368_1.png) no-repeat;
@@ -228,6 +250,13 @@
         
         background-size: contain;
         animation:cow-fadeup 3s ease 8s forwards;
+
+        @include respond(pc-lg){
+          top: 80vh;
+          width: 200px;
+          height: 200px;
+          left: 44%;
+        }
       }
   }
 
@@ -237,7 +266,10 @@
     bottom: 10vh;
     opacity: 0;
     animation:title-fadeup 3s ease 18s forwards;
-
+    @include respond(pc-lg){
+      top: 30vh;
+    }
+  
     .title-word{
       color: white;
     }
@@ -250,9 +282,17 @@
       background: url(../image/白峰.png) no-repeat;
       background-size: 50px;
       background-position: right 36% bottom 45%;
+      @include respond(phone-below) {
+        // 768px以下の時に画像サイズ変更
+        background-size: 30px;
+        background-position: right 15% bottom 10%;
+      }
+      @include respond(pc-lg){
+        background-size: 50px;
+        background-position: right 40% bottom;
+      }
     }
   }
-
   // アニメーションのリスタートに使用
 // .restart-ufo{
 //   animation: ufo 6s ease-in-out forwards,ufo-fade 6s ease-in-out 14s forwards;

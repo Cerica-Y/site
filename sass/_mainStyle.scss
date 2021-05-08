@@ -5,6 +5,7 @@ body {
     line-height: 1.6;
     color: rgba(0, 0, 0, 0.5);
     background: whitesmoke;
+    
   }
 h1{
   font-weight: bold;
@@ -21,6 +22,10 @@ h4{
 .image{
   max-width: 60%;
   height: auto;
+  @include respond(pc-lg){
+    width: 44vh;
+    height: auto;
+  }
 }
 @mixin bg-gradient($color: #da7dff, $amount: #4d4398) {
   background: linear-gradient($color, $amount) fixed;

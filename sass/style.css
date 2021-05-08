@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(app/sass/star.scss);
 @-webkit-keyframes ufo {
   0% {
     -webkit-transform: translate(0);
@@ -200,6 +199,12 @@
           animation: ufo 6s ease-in-out forwards,ufo-fade 6s ease-in-out 14s forwards;
 }
 
+@media only screen and (min-width: 87.5em) {
+  .ufo-conter {
+    top: 60vh;
+  }
+}
+
 .ufo-conter #ufo {
   position: relative;
   width: 100%;
@@ -311,6 +316,13 @@
           animation: light-fadeup 3s ease 11s forwards;
 }
 
+@media only screen and (min-width: 87.5em) {
+  .light-contents {
+    top: 70vh;
+    left: 40%;
+  }
+}
+
 .light-contents .light {
   width: 0;
   height: 0;
@@ -320,6 +332,12 @@
   opacity: 0;
   -webkit-animation: light 3s ease 6s forwards;
           animation: light 3s ease 6s forwards;
+}
+
+@media only screen and (min-width: 87.5em) {
+  .light-contents .light {
+    border-width: 0 200px 400px 200px;
+  }
 }
 
 .cow-conter {
@@ -338,6 +356,15 @@
           animation: shadow-fade 3s ease 8s forwards;
 }
 
+@media only screen and (min-width: 87.5em) {
+  .cow-conter .shadow {
+    top: 86vh;
+    width: 220px;
+    height: 60px;
+    left: 44%;
+  }
+}
+
 .cow-conter #cow {
   background: url(../image/k0368_1.png) no-repeat;
   position: absolute;
@@ -350,6 +377,15 @@
           animation: cow-fadeup 3s ease 8s forwards;
 }
 
+@media only screen and (min-width: 87.5em) {
+  .cow-conter #cow {
+    top: 80vh;
+    width: 200px;
+    height: 200px;
+    left: 44%;
+  }
+}
+
 .title-content {
   position: relative;
   text-align: center;
@@ -357,6 +393,12 @@
   opacity: 0;
   -webkit-animation: title-fadeup 3s ease 18s forwards;
           animation: title-fadeup 3s ease 18s forwards;
+}
+
+@media only screen and (min-width: 87.5em) {
+  .title-content {
+    top: 30vh;
+  }
 }
 
 .title-content .title-word {
@@ -374,6 +416,20 @@
   background: url(../image/白峰.png) no-repeat;
   background-size: 50px;
   background-position: right 36% bottom 45%;
+}
+
+@media screen and (max-width: 36em) {
+  .title-content .img-title {
+    background-size: 30px;
+    background-position: right 15% bottom 10%;
+  }
+}
+
+@media only screen and (min-width: 87.5em) {
+  .title-content .img-title {
+    background-size: 50px;
+    background-position: right 40% bottom;
+  }
 }
 
 body {
@@ -404,6 +460,13 @@ h4 {
 .image {
   max-width: 60%;
   height: auto;
+}
+
+@media only screen and (min-width: 87.5em) {
+  .image {
+    width: 44vh;
+    height: auto;
+  }
 }
 
 #top {
@@ -487,6 +550,246 @@ h4 {
   background-color: #ffec47;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+@-webkit-keyframes bg-color1 {
+  0% {
+    background-color: #f5b1aa;
+  }
+  20% {
+    background-color: #f8e58c;
+  }
+  40% {
+    background-color: #93ca76;
+  }
+  60% {
+    background-color: #bce2e8;
+  }
+  80% {
+    background-color: #dbd0e6;
+  }
+  100% {
+    background-color: #f5b1aa;
+  }
+}
+
+@keyframes bg-color1 {
+  0% {
+    background-color: #f5b1aa;
+  }
+  20% {
+    background-color: #f8e58c;
+  }
+  40% {
+    background-color: #93ca76;
+  }
+  60% {
+    background-color: #bce2e8;
+  }
+  80% {
+    background-color: #dbd0e6;
+  }
+  100% {
+    background-color: #f5b1aa;
+  }
+}
+
+@-webkit-keyframes bg-color2 {
+  0% {
+    background-color: #f5b1aa;
+  }
+  20% {
+    background-color: #bce2e8;
+  }
+  40% {
+    background-color: #dbd0e6;
+  }
+  60% {
+    background-color: #f8e58c;
+  }
+  80% {
+    background-color: #93ca76;
+  }
+  100% {
+    background-color: #f5b1aa;
+  }
+}
+
+@keyframes bg-color2 {
+  0% {
+    background-color: #f5b1aa;
+  }
+  20% {
+    background-color: #bce2e8;
+  }
+  40% {
+    background-color: #dbd0e6;
+  }
+  60% {
+    background-color: #f8e58c;
+  }
+  80% {
+    background-color: #93ca76;
+  }
+  100% {
+    background-color: #f5b1aa;
+  }
+}
+
+@-webkit-keyframes bg-color3 {
+  0% {
+    background-color: #93ca76;
+  }
+  20% {
+    background-color: #f5b1aa;
+  }
+  40% {
+    background-color: #dbd0e6;
+  }
+  60% {
+    background-color: #f8e58c;
+  }
+  80% {
+    background-color: #ca76c6;
+  }
+  100% {
+    background-color: #bce2e8;
+  }
+}
+
+@keyframes bg-color3 {
+  0% {
+    background-color: #93ca76;
+  }
+  20% {
+    background-color: #f5b1aa;
+  }
+  40% {
+    background-color: #dbd0e6;
+  }
+  60% {
+    background-color: #f8e58c;
+  }
+  80% {
+    background-color: #ca76c6;
+  }
+  100% {
+    background-color: #bce2e8;
+  }
+}
+
+.star1 {
+  width: 10px;
+  height: 10px;
+  background-color: #f8e58c;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bg-color1;
+  animation-name: bg-color1;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+
+.starA {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+
+.starB {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+
+.starC {
+  position: absolute;
+  top: 40%;
+  right: 26%;
+}
+
+.star2 {
+  width: 10px;
+  height: 10px;
+  background-color: #93ca76;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bg-color2;
+  animation-name: bg-color2;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+
+.starD {
+  position: absolute;
+  top: 80%;
+  left: 32%;
+}
+
+.starE {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+}
+
+.starF {
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.star3 {
+  width: 10px;
+  height: 10px;
+  background-color: #f5b1aa;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bg-color2;
+  animation-name: bg-color2;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+
+.starG {
+  position: absolute;
+  top: 70%;
+  right: 30%;
+}
+
+.starH {
+  position: absolute;
+  top: 17%;
+  left: 60%;
+}
+
+.starI {
+  position: absolute;
+  top: 17%;
+  left: 30%;
+}
+
+.starJ {
+  position: absolute;
+  top: 17%;
+  left: 60%;
+}
+
+.starK {
+  position: absolute;
+  top: 17%;
+  left: 10%;
 }
 
 .works, #skill {
