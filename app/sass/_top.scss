@@ -246,24 +246,29 @@
       opacity: 0;
       animation:title-fadeup 3s ease 19.5s forwards;
     }
+    .img-title{
+      background: url(../image/白峰.png) no-repeat;
+      background-size: 50px;
+      background-position: right 36% bottom 45%;
+    }
   }
 
   // アニメーションのリスタートに使用
-.restart-ufo{
-  animation: ufo 6s ease-in-out forwards,ufo-fade 6s ease-in-out 14s forwards;
-}
-.restart-light{
-  animation: light-fadeup 3s ease 11s forwards,light 3s ease 6s forwards;
-}
-.restert-cow{
-  animation:cow-fadeup 3s ease 8s forwards;
-}
-.restert-shadow{
-  animation: shadow-fade 3s ease 8s forwards;
-}
-.restert-title{
-  animation:title-fadeup 3s ease 18s forwards;
-}
-.restert-title2{
-  animation:title-fadeup 3s ease 19.5s forwards;
-}
+// .restart-ufo{
+//   animation: ufo 6s ease-in-out forwards,ufo-fade 6s ease-in-out 14s forwards;
+// }
+// .restart-light{
+//   animation: light-fadeup 3s ease 11s forwards,light 3s ease 6s forwards;
+// }
+// .restert-cow{
+//   animation:cow-fadeup 3s ease 8s forwards;
+// }
+// .restert-shadow{
+//   animation: shadow-fade 3s ease 8s forwards;
+// }
+// .restert-title{
+//   animation:title-fadeup 3s ease 18s forwards;
+// }
+// .restert-title2{
+//   animation:title-fadeup 3s ease 19.5s forwards;
+// }
