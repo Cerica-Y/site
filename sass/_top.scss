@@ -90,6 +90,20 @@
     left: 100%;
     animation: ufo 6s ease-in-out forwards,ufo-fade 6s ease-in-out 14s forwards;
 
+    @include respond(phone-below){
+      top: 10vh;
+      animation: none;
+      transform: none;
+    }
+    @include respond(phone-md){
+      top: 30vh;
+    }
+    @include respond(tab-beside){
+      top: 45vh;
+    }
+    @include respond(pc){
+      top: 5vh;
+    }
     @include respond(pc-lg){
       top: 60vh;
     }
@@ -195,8 +209,24 @@
   z-index: 4;
   left: 45%;
   top: 40vh;
-  animation: light-fadeup 3s ease 11s forwards;
+  animation:light-fadeup 3s ease 11s forwards;
 
+  @include respond(phone-below){
+    animation: none;
+    transform: none;
+  }
+  @include respond(phone-md){
+    top: 51vh;
+    left: 38%;
+  }
+  @include respond(tab-beside){
+    top: 58vh;
+    left: 38%;
+  }
+  @include respond(pc){
+    top: 34vh;
+    left: 45%;
+  }
   @include respond(pc-lg){
     top: 70vh;
     left: 40%;
@@ -209,8 +239,18 @@
     border-width: 0 120px 320px 120px;
     border-color: transparent transparent #ffec47 transparent;
     opacity: 0;
-    animation: light 3s ease 6s forwards;
+    animation:light 3s ease 6s forwards;
 
+    
+    @include respond(phone-md){
+      border-width: 0 200px 400px 200px;
+    }
+    @include respond(tab-beside){
+      border-width: 0 200px 400px 200px;
+    }
+    @include respond(pc){
+      border-width: 0 120px 320px 120px;
+    }
     @include respond(pc-lg){
       border-width: 0 200px 400px 200px;
   
@@ -233,6 +273,29 @@
 
         animation: shadow-fade 3s ease 8s forwards;
 
+
+        @include respond(phone-below){
+          animation: none;
+          transform: none;
+        }
+        @include respond(phone-md){
+          top: 84vh;
+          width: 170px;
+          height: 50px;
+          left: 50%;
+        }
+        @include respond(tab-beside){
+          top: 84vh;
+          width: 170px;
+          height: 50px;
+          left: 50%;
+        }
+        @include respond(pc){
+          top: 80vh;
+          width: 130px;
+          height: 30px;
+          left: 50%;
+        }
         @include respond(pc-lg){
           top: 86vh;
           width: 220px;
@@ -251,6 +314,29 @@
         background-size: contain;
         animation:cow-fadeup 3s ease 8s forwards;
 
+
+        @include respond(phone-below){
+          animation: none;
+          transform: none;
+        }
+        @include respond(phone-md){
+          top: 75vh;
+          width: 150px;
+          height: 150px;
+          left: 50%;
+        }
+        @include respond(tab-beside){
+          top: 77vh;
+          width: 150px;
+          height: 150px;
+          left: 50%;
+        }
+        @include respond(pc){
+          top: 70vh;
+          width: 110px;
+          height: 110px;
+          left: 50%;
+        }
         @include respond(pc-lg){
           top: 80vh;
           width: 200px;
@@ -266,6 +352,10 @@
     bottom: 10vh;
     opacity: 0;
     animation:title-fadeup 3s ease 18s forwards;
+
+    @include respond(phone-below){
+      animation:title-fadeup 3s ease forwards;
+    }
     @include respond(pc-lg){
       top: 30vh;
     }
@@ -277,15 +367,27 @@
       color: white;
       opacity: 0;
       animation:title-fadeup 3s ease 19.5s forwards;
+
+      @include respond(phone-below){
+        animation:title-fadeup 3s ease 1.5s forwards;
+      }
     }
     .img-title{
       background: url(../image/白峰.png) no-repeat;
       background-size: 50px;
       background-position: right 36% bottom 45%;
-      @include respond(phone-below) {
-        // 768px以下の時に画像サイズ変更
+
+      @include respond(phone-below){
         background-size: 30px;
-        background-position: right 15% bottom 10%;
+        background-position: right 12% bottom;
+      }
+      @include respond(phone-md){
+        background-size: 40px;
+        background-position: right 30% bottom;
+      }
+      @include respond(tab-beside){
+        background-size: 40px;
+        background-position: right 33% bottom;
       }
       @include respond(pc-lg){
         background-size: 50px;

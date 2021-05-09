@@ -199,6 +199,34 @@
           animation: ufo 6s ease-in-out forwards,ufo-fade 6s ease-in-out 14s forwards;
 }
 
+@media screen and (max-width: 36em) {
+  .ufo-conter {
+    top: 10vh;
+    -webkit-animation: none;
+            animation: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .ufo-conter {
+    top: 30vh;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .ufo-conter {
+    top: 45vh;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .ufo-conter {
+    top: 5vh;
+  }
+}
+
 @media only screen and (min-width: 87.5em) {
   .ufo-conter {
     top: 60vh;
@@ -316,6 +344,36 @@
           animation: light-fadeup 3s ease 11s forwards;
 }
 
+@media screen and (max-width: 36em) {
+  .light-contents {
+    -webkit-animation: none;
+            animation: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .light-contents {
+    top: 51vh;
+    left: 38%;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .light-contents {
+    top: 58vh;
+    left: 38%;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .light-contents {
+    top: 34vh;
+    left: 45%;
+  }
+}
+
 @media only screen and (min-width: 87.5em) {
   .light-contents {
     top: 70vh;
@@ -332,6 +390,24 @@
   opacity: 0;
   -webkit-animation: light 3s ease 6s forwards;
           animation: light 3s ease 6s forwards;
+}
+
+@media only screen and (min-width: 48em) {
+  .light-contents .light {
+    border-width: 0 200px 400px 200px;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .light-contents .light {
+    border-width: 0 200px 400px 200px;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .light-contents .light {
+    border-width: 0 120px 320px 120px;
+  }
 }
 
 @media only screen and (min-width: 87.5em) {
@@ -356,6 +432,42 @@
           animation: shadow-fade 3s ease 8s forwards;
 }
 
+@media screen and (max-width: 36em) {
+  .cow-conter .shadow {
+    -webkit-animation: none;
+            animation: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .cow-conter .shadow {
+    top: 84vh;
+    width: 170px;
+    height: 50px;
+    left: 50%;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .cow-conter .shadow {
+    top: 84vh;
+    width: 170px;
+    height: 50px;
+    left: 50%;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .cow-conter .shadow {
+    top: 80vh;
+    width: 130px;
+    height: 30px;
+    left: 50%;
+  }
+}
+
 @media only screen and (min-width: 87.5em) {
   .cow-conter .shadow {
     top: 86vh;
@@ -377,6 +489,42 @@
           animation: cow-fadeup 3s ease 8s forwards;
 }
 
+@media screen and (max-width: 36em) {
+  .cow-conter #cow {
+    -webkit-animation: none;
+            animation: none;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .cow-conter #cow {
+    top: 75vh;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .cow-conter #cow {
+    top: 77vh;
+    width: 150px;
+    height: 150px;
+    left: 50%;
+  }
+}
+
+@media only screen and (min-width: 75em) {
+  .cow-conter #cow {
+    top: 70vh;
+    width: 110px;
+    height: 110px;
+    left: 50%;
+  }
+}
+
 @media only screen and (min-width: 87.5em) {
   .cow-conter #cow {
     top: 80vh;
@@ -393,6 +541,13 @@
   opacity: 0;
   -webkit-animation: title-fadeup 3s ease 18s forwards;
           animation: title-fadeup 3s ease 18s forwards;
+}
+
+@media screen and (max-width: 36em) {
+  .title-content {
+    -webkit-animation: title-fadeup 3s ease forwards;
+            animation: title-fadeup 3s ease forwards;
+  }
 }
 
 @media only screen and (min-width: 87.5em) {
@@ -412,6 +567,13 @@
           animation: title-fadeup 3s ease 19.5s forwards;
 }
 
+@media screen and (max-width: 36em) {
+  .title-content .title-word2 {
+    -webkit-animation: title-fadeup 3s ease 1.5s forwards;
+            animation: title-fadeup 3s ease 1.5s forwards;
+  }
+}
+
 .title-content .img-title {
   background: url(../image/白峰.png) no-repeat;
   background-size: 50px;
@@ -421,7 +583,21 @@
 @media screen and (max-width: 36em) {
   .title-content .img-title {
     background-size: 30px;
-    background-position: right 15% bottom 10%;
+    background-position: right 12% bottom;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .title-content .img-title {
+    background-size: 40px;
+    background-position: right 30% bottom;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .title-content .img-title {
+    background-size: 40px;
+    background-position: right 33% bottom;
   }
 }
 
