@@ -91,7 +91,6 @@
     animation: ufo 6s ease-in-out forwards,ufo-fade 6s ease-in-out 14s forwards;
 
     @include respond(phone-below){
-      top: 10vh;
       animation: none;
       transform: none;
     }
@@ -211,13 +210,13 @@
   top: 40vh;
   animation:light-fadeup 3s ease 11s forwards;
 
-  @include respond(phone-below){
-    animation: none;
-    transform: none;
-  }
+  
   @include respond(phone-md){
     top: 51vh;
     left: 38%;
+  }
+  @include respond(phone-below){
+    opacity: 0;
   }
   @include respond(tab-beside){
     top: 58vh;
@@ -241,7 +240,9 @@
     opacity: 0;
     animation:light 3s ease 6s forwards;
 
-    
+    @include respond(phone-below){
+      opacity: 0;
+    }
     @include respond(phone-md){
       border-width: 0 200px 400px 200px;
     }
@@ -278,8 +279,9 @@
           animation: none;
           transform: none;
         }
+
         @include respond(phone-md){
-          top: 84vh;
+          top: 85vh;
           width: 170px;
           height: 50px;
           left: 50%;

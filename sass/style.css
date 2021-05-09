@@ -201,7 +201,6 @@
 
 @media screen and (max-width: 36em) {
   .ufo-conter {
-    top: 10vh;
     -webkit-animation: none;
             animation: none;
     -webkit-transform: none;
@@ -344,19 +343,16 @@
           animation: light-fadeup 3s ease 11s forwards;
 }
 
-@media screen and (max-width: 36em) {
-  .light-contents {
-    -webkit-animation: none;
-            animation: none;
-    -webkit-transform: none;
-            transform: none;
-  }
-}
-
 @media only screen and (min-width: 48em) {
   .light-contents {
     top: 51vh;
     left: 38%;
+  }
+}
+
+@media screen and (max-width: 36em) {
+  .light-contents {
+    opacity: 0;
   }
 }
 
@@ -390,6 +386,12 @@
   opacity: 0;
   -webkit-animation: light 3s ease 6s forwards;
           animation: light 3s ease 6s forwards;
+}
+
+@media screen and (max-width: 36em) {
+  .light-contents .light {
+    opacity: 0;
+  }
 }
 
 @media only screen and (min-width: 48em) {
